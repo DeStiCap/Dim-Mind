@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DSC.Dialogue;
+
+namespace Template
+{
+	[CreateAssetMenu(fileName = "DialogueReplaceData_#SCRIPTNAME#", menuName = "DSC/Dialogue/Replace Data/#SCRIPTNAME#")]
+    public class #SCRIPTNAME# : BaseDialogueReplaceData
+    {
+        #region Variable - Property
+
+        public override string replaceWord { get; }
+
+        #endregion
+    }
+}

@@ -1,0 +1,3371 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - Move
+    - Timer
+    - ToScene
+    Cinemachine.dll:
+    - Cinemachine.CinemachineBasicMultiChannelPerlin
+    - Cinemachine.CinemachineBrain
+    - Cinemachine.CinemachineFramingTransposer
+    - Cinemachine.CinemachinePipeline
+    - Cinemachine.CinemachineVirtualCamera
+    - Cinemachine.NoiseSettings
+    DSC.Dialogue.dll:
+    - DSC.Dialogue.DSC_Dialogue_DataController
+    - DSC.Dialogue.DSC_Dialogue_TextGroupController
+    - DSC.Dialogue.DSC_Dialogue_TypingController
+    - DSC.Dialogue.DialogueData
+    DSC.Event.Helper.dll:
+    - DSC.Event.Helper.DSC_Event_GameObject
+    - DSC.Event.Helper.DSC_Event_LoadScene
+    - DSC.Event.Helper.DSC_Event_QuitApplication
+    - DSC.Event.Helper.DSC_Event_RunEventsByCollision2D
+    - DSC.Event.Helper.DSC_Event_RunEventsByEventGameObject
+    - DSC.Event.Helper.DSC_Event_RunEventsByGetKey
+    - DSC.Event.Helper.DSC_Event_RunEventsByMono
+    - DSC.Event.Helper.DSC_Event_RunEventsByOverlapBox2D
+    - DSC.Event.Helper.DSC_Event_RunEventsByOverlapCircle
+    - DSC.Event.Helper.DSC_Event_RunEventsByTime
+    - DSC.Event.Helper.DSC_Event_RunEventsByTrigger2D
+    - DSC.Event.Helper.DSC_Event_Transform
+    GGJ2020.dll:
+    - GGJ2020.Actor_AIController
+    - GGJ2020.Actor_AmmoController
+    - GGJ2020.Actor_Damageable
+    - GGJ2020.Actor_DamageablePart
+    - GGJ2020.Actor_EventController
+    - GGJ2020.Actor_MarkPointController
+    - GGJ2020.Actor_SpineAnimationController
+    - GGJ2020.DSC_ActorBehaviourCondition_ActorStateFlag
+    - GGJ2020.DSC_ActorBehaviourCondition_HasSkill
+    - GGJ2020.DSC_ActorBehaviourCondition_IsGrounding
+    - GGJ2020.DSC_ActorBehaviourCondition_IsWalling
+    - GGJ2020.DSC_ActorBehaviour_AttackRange
+    - GGJ2020.DSC_ActorBehaviour_Boss_Attack
+    - GGJ2020.DSC_ActorBehaviour_DoCollisionDamage
+    - GGJ2020.DSC_ActorBehaviour_DoubleJump
+    - GGJ2020.DSC_ActorBehaviour_FlipFacing
+    - GGJ2020.DSC_ActorBehaviour_GravityIncrease
+    - GGJ2020.DSC_ActorBehaviour_GroundPound
+    - GGJ2020.DSC_ActorBehaviour_Jump
+    - GGJ2020.DSC_ActorBehaviour_MoveBetweenMarkPoint
+    - GGJ2020.DSC_ActorBehaviour_PlayAnimation
+    - GGJ2020.DSC_ActorBehaviour_SearchPlayer
+    - GGJ2020.DSC_ActorBehaviour_Walk
+    - GGJ2020.DSC_ActorBehaviour_WallJump
+    - GGJ2020.DSC_ActorController
+    - GGJ2020.DSC_ActorInput
+    - GGJ2020.DSC_ActorStatus
+    - GGJ2020.EventCondition_GroundPounding
+    - GGJ2020.EventCondition_VelocityY
+    - GGJ2020.Event_Animator
+    - GGJ2020.Event_Damage
+    - GGJ2020.Event_GroundPound
+    - GGJ2020.Event_MyTimeScale
+    - GGJ2020.Event_Skill
+    - GGJ2020.Event_StoneDrop
+    - GGJ2020.FollowGameObjectController
+    - GGJ2020.GameOverController
+    - GGJ2020.GetItemController
+    - GGJ2020.Global_GameManager
+    - GGJ2020.Global_GameplayManager
+    - GGJ2020.HurtImageController
+    - GGJ2020.Item_SkillController
+    - GGJ2020.KnifeFlyingController
+    - GGJ2020.MarkPointController
+    - GGJ2020.SimpleCameraShakeInCinemachine
+    - Template.Event_Debug
+    Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.SceneViewGridManager
+    - UnityEditor.Tilemaps.TileDragAndDropManager
+    Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.InputActionAsset
+    - UnityEngine.InputSystem.InputSettings
+    - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.PlayerInput
+    - UnityEngine.InputSystem.RemoteInputPlayerConnection
+    Unity.RenderPipelines.Core.Runtime.dll:
+    - UnityEngine.Rendering.UI.DebugUIHandlerBitField
+    - UnityEngine.Rendering.UI.DebugUIHandlerButton
+    - UnityEngine.Rendering.UI.DebugUIHandlerCanvas
+    - UnityEngine.Rendering.UI.DebugUIHandlerColor
+    - UnityEngine.Rendering.UI.DebugUIHandlerContainer
+    - UnityEngine.Rendering.UI.DebugUIHandlerEnumField
+    - UnityEngine.Rendering.UI.DebugUIHandlerEnumHistory
+    - UnityEngine.Rendering.UI.DebugUIHandlerFloatField
+    - UnityEngine.Rendering.UI.DebugUIHandlerFoldout
+    - UnityEngine.Rendering.UI.DebugUIHandlerGroup
+    - UnityEngine.Rendering.UI.DebugUIHandlerHBox
+    - UnityEngine.Rendering.UI.DebugUIHandlerIndirectFloatField
+    - UnityEngine.Rendering.UI.DebugUIHandlerIndirectToggle
+    - UnityEngine.Rendering.UI.DebugUIHandlerIntField
+    - UnityEngine.Rendering.UI.DebugUIHandlerPanel
+    - UnityEngine.Rendering.UI.DebugUIHandlerPersistentCanvas
+    - UnityEngine.Rendering.UI.DebugUIHandlerToggle
+    - UnityEngine.Rendering.UI.DebugUIHandlerToggleHistory
+    - UnityEngine.Rendering.UI.DebugUIHandlerUIntField
+    - UnityEngine.Rendering.UI.DebugUIHandlerVBox
+    - UnityEngine.Rendering.UI.DebugUIHandlerValue
+    - UnityEngine.Rendering.UI.DebugUIHandlerVector2
+    - UnityEngine.Rendering.UI.DebugUIHandlerVector3
+    - UnityEngine.Rendering.UI.DebugUIHandlerVector4
+    - UnityEngine.Rendering.UI.UIFoldout
+    Unity.RenderPipelines.Universal.Runtime.dll:
+    - UnityEngine.Experimental.Rendering.Universal.Light2D
+    - UnityEngine.Experimental.Rendering.Universal.Renderer2DData
+    - UnityEngine.Rendering.Universal.PostProcessData
+    - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+    - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
+    - UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
+    - UnityEngine.UI.VerticalLayoutGroup
+    spine-unity.dll:
+    - Spine.Unity.SkeletonAnimation
+    - Spine.Unity.SkeletonDataAsset
+    - Spine.Unity.SpineAtlasAsset
+  sceneClasses:
+    Assets/Credit_Page/Credit.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11396}
+    - Class: 114
+      Script: {instanceID: 11868}
+    - Class: 114
+      Script: {instanceID: 11974}
+    - Class: 114
+      Script: {instanceID: 13002}
+    - Class: 114
+      Script: {instanceID: 14168}
+    - Class: 114
+      Script: {instanceID: 15450}
+    - Class: 114
+      Script: {instanceID: 16438}
+    - Class: 114
+      Script: {instanceID: 378294}
+    - Class: 114
+      Script: {instanceID: 378296}
+    - Class: 114
+      Script: {instanceID: 378298}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/MainAsset/Scenes/EndingScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11396}
+    - Class: 114
+      Script: {instanceID: 11974}
+    - Class: 114
+      Script: {instanceID: 13002}
+    - Class: 114
+      Script: {instanceID: 13810}
+    - Class: 114
+      Script: {instanceID: 14168}
+    - Class: 114
+      Script: {instanceID: 15450}
+    - Class: 114
+      Script: {instanceID: 15680}
+    - Class: 114
+      Script: {instanceID: 16438}
+    - Class: 114
+      Script: {instanceID: 239292}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/MainAsset/Scenes/GameplayScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 788}
+    - Class: 114
+      Script: {instanceID: 11372}
+    - Class: 114
+      Script: {instanceID: 11396}
+    - Class: 114
+      Script: {instanceID: 11440}
+    - Class: 114
+      Script: {instanceID: 11572}
+    - Class: 114
+      Script: {instanceID: 11606}
+    - Class: 114
+      Script: {instanceID: 11658}
+    - Class: 114
+      Script: {instanceID: 11974}
+    - Class: 114
+      Script: {instanceID: 12344}
+    - Class: 114
+      Script: {instanceID: 12372}
+    - Class: 114
+      Script: {instanceID: 12484}
+    - Class: 114
+      Script: {instanceID: 12626}
+    - Class: 114
+      Script: {instanceID: 12654}
+    - Class: 114
+      Script: {instanceID: 12656}
+    - Class: 114
+      Script: {instanceID: 12770}
+    - Class: 114
+      Script: {instanceID: 12802}
+    - Class: 114
+      Script: {instanceID: 12858}
+    - Class: 114
+      Script: {instanceID: 12874}
+    - Class: 114
+      Script: {instanceID: 12888}
+    - Class: 114
+      Script: {instanceID: 13002}
+    - Class: 114
+      Script: {instanceID: 13114}
+    - Class: 114
+      Script: {instanceID: 13186}
+    - Class: 114
+      Script: {instanceID: 13216}
+    - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
+      Script: {instanceID: 13346}
+    - Class: 114
+      Script: {instanceID: 13386}
+    - Class: 114
+      Script: {instanceID: 13414}
+    - Class: 114
+      Script: {instanceID: 13446}
+    - Class: 114
+      Script: {instanceID: 13492}
+    - Class: 114
+      Script: {instanceID: 13608}
+    - Class: 114
+      Script: {instanceID: 13690}
+    - Class: 114
+      Script: {instanceID: 13740}
+    - Class: 114
+      Script: {instanceID: 13802}
+    - Class: 114
+      Script: {instanceID: 13938}
+    - Class: 114
+      Script: {instanceID: 13952}
+    - Class: 114
+      Script: {instanceID: 14290}
+    - Class: 114
+      Script: {instanceID: 14308}
+    - Class: 114
+      Script: {instanceID: 14488}
+    - Class: 114
+      Script: {instanceID: 14502}
+    - Class: 114
+      Script: {instanceID: 14568}
+    - Class: 114
+      Script: {instanceID: 14678}
+    - Class: 114
+      Script: {instanceID: 14712}
+    - Class: 114
+      Script: {instanceID: 14740}
+    - Class: 114
+      Script: {instanceID: 14744}
+    - Class: 114
+      Script: {instanceID: 14848}
+    - Class: 114
+      Script: {instanceID: 14884}
+    - Class: 114
+      Script: {instanceID: 14904}
+    - Class: 114
+      Script: {instanceID: 14946}
+    - Class: 114
+      Script: {instanceID: 15020}
+    - Class: 114
+      Script: {instanceID: 15028}
+    - Class: 114
+      Script: {instanceID: 15298}
+    - Class: 114
+      Script: {instanceID: 15304}
+    - Class: 114
+      Script: {instanceID: 15450}
+    - Class: 114
+      Script: {instanceID: 15468}
+    - Class: 114
+      Script: {instanceID: 15586}
+    - Class: 114
+      Script: {instanceID: 15680}
+    - Class: 114
+      Script: {instanceID: 15692}
+    - Class: 114
+      Script: {instanceID: 15730}
+    - Class: 114
+      Script: {instanceID: 16072}
+    - Class: 114
+      Script: {instanceID: 16134}
+    - Class: 114
+      Script: {instanceID: 16362}
+    - Class: 114
+      Script: {instanceID: 16364}
+    - Class: 114
+      Script: {instanceID: 16394}
+    - Class: 114
+      Script: {instanceID: 16438}
+    - Class: 114
+      Script: {instanceID: 16470}
+    - Class: 114
+      Script: {instanceID: 16564}
+    - Class: 114
+      Script: {instanceID: 49962}
+    - Class: 114
+      Script: {instanceID: 52716}
+    - Class: 114
+      Script: {instanceID: 58424}
+    - Class: 114
+      Script: {instanceID: 207626}
+    - Class: 114
+      Script: {instanceID: 291776}
+    - Class: 114
+      Script: {instanceID: 357858}
+    - Class: 114
+      Script: {instanceID: 364898}
+    - Class: 114
+      Script: {instanceID: 364942}
+    - Class: 114
+      Script: {instanceID: 364954}
+    - Class: 114
+      Script: {instanceID: 364988}
+    - Class: 114
+      Script: {instanceID: 442402}
+    - Class: 114
+      Script: {instanceID: 444530}
+    - Class: 114
+      Script: {instanceID: 541036}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/MainAsset/Scenes/TitleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11396}
+    - Class: 114
+      Script: {instanceID: 11554}
+    - Class: 114
+      Script: {instanceID: 11712}
+    - Class: 114
+      Script: {instanceID: 11738}
+    - Class: 114
+      Script: {instanceID: 11868}
+    - Class: 114
+      Script: {instanceID: 11876}
+    - Class: 114
+      Script: {instanceID: 11974}
+    - Class: 114
+      Script: {instanceID: 12024}
+    - Class: 114
+      Script: {instanceID: 12208}
+    - Class: 114
+      Script: {instanceID: 12254}
+    - Class: 114
+      Script: {instanceID: 12654}
+    - Class: 114
+      Script: {instanceID: 12712}
+    - Class: 114
+      Script: {instanceID: 12800}
+    - Class: 114
+      Script: {instanceID: 13002}
+    - Class: 114
+      Script: {instanceID: 13078}
+    - Class: 114
+      Script: {instanceID: 13154}
+    - Class: 114
+      Script: {instanceID: 13454}
+    - Class: 114
+      Script: {instanceID: 13528}
+    - Class: 114
+      Script: {instanceID: 13606}
+    - Class: 114
+      Script: {instanceID: 13772}
+    - Class: 114
+      Script: {instanceID: 13810}
+    - Class: 114
+      Script: {instanceID: 14188}
+    - Class: 114
+      Script: {instanceID: 14216}
+    - Class: 114
+      Script: {instanceID: 14424}
+    - Class: 114
+      Script: {instanceID: 14648}
+    - Class: 114
+      Script: {instanceID: 14734}
+    - Class: 114
+      Script: {instanceID: 14738}
+    - Class: 114
+      Script: {instanceID: 14744}
+    - Class: 114
+      Script: {instanceID: 14764}
+    - Class: 114
+      Script: {instanceID: 14774}
+    - Class: 114
+      Script: {instanceID: 14950}
+    - Class: 114
+      Script: {instanceID: 14986}
+    - Class: 114
+      Script: {instanceID: 14996}
+    - Class: 114
+      Script: {instanceID: 15432}
+    - Class: 114
+      Script: {instanceID: 15450}
+    - Class: 114
+      Script: {instanceID: 15518}
+    - Class: 114
+      Script: {instanceID: 15680}
+    - Class: 114
+      Script: {instanceID: 15846}
+    - Class: 114
+      Script: {instanceID: 15904}
+    - Class: 114
+      Script: {instanceID: 16064}
+    - Class: 114
+      Script: {instanceID: 16122}
+    - Class: 114
+      Script: {instanceID: 16390}
+    - Class: 114
+      Script: {instanceID: 16396}
+    - Class: 114
+      Script: {instanceID: 16438}
+    - Class: 114
+      Script: {instanceID: 16480}
+    - Class: 114
+      Script: {instanceID: 16484}
+    - Class: 114
+      Script: {instanceID: 16640}
+    - Class: 114
+      Script: {instanceID: 16648}
+    - Class: 114
+      Script: {instanceID: 239292}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Mo/Scenes/MoScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 788}
+    - Class: 114
+      Script: {instanceID: 11372}
+    - Class: 114
+      Script: {instanceID: 11572}
+    - Class: 114
+      Script: {instanceID: 11606}
+    - Class: 114
+      Script: {instanceID: 11658}
+    - Class: 114
+      Script: {instanceID: 12344}
+    - Class: 114
+      Script: {instanceID: 12372}
+    - Class: 114
+      Script: {instanceID: 12484}
+    - Class: 114
+      Script: {instanceID: 12626}
+    - Class: 114
+      Script: {instanceID: 12654}
+    - Class: 114
+      Script: {instanceID: 12656}
+    - Class: 114
+      Script: {instanceID: 12770}
+    - Class: 114
+      Script: {instanceID: 12858}
+    - Class: 114
+      Script: {instanceID: 12874}
+    - Class: 114
+      Script: {instanceID: 12888}
+    - Class: 114
+      Script: {instanceID: 13114}
+    - Class: 114
+      Script: {instanceID: 13186}
+    - Class: 114
+      Script: {instanceID: 13216}
+    - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
+      Script: {instanceID: 13346}
+    - Class: 114
+      Script: {instanceID: 13386}
+    - Class: 114
+      Script: {instanceID: 13414}
+    - Class: 114
+      Script: {instanceID: 13446}
+    - Class: 114
+      Script: {instanceID: 13608}
+    - Class: 114
+      Script: {instanceID: 13690}
+    - Class: 114
+      Script: {instanceID: 13740}
+    - Class: 114
+      Script: {instanceID: 13802}
+    - Class: 114
+      Script: {instanceID: 13938}
+    - Class: 114
+      Script: {instanceID: 13952}
+    - Class: 114
+      Script: {instanceID: 14290}
+    - Class: 114
+      Script: {instanceID: 14308}
+    - Class: 114
+      Script: {instanceID: 14488}
+    - Class: 114
+      Script: {instanceID: 14502}
+    - Class: 114
+      Script: {instanceID: 14568}
+    - Class: 114
+      Script: {instanceID: 14678}
+    - Class: 114
+      Script: {instanceID: 14712}
+    - Class: 114
+      Script: {instanceID: 14740}
+    - Class: 114
+      Script: {instanceID: 14848}
+    - Class: 114
+      Script: {instanceID: 14884}
+    - Class: 114
+      Script: {instanceID: 14904}
+    - Class: 114
+      Script: {instanceID: 14946}
+    - Class: 114
+      Script: {instanceID: 15020}
+    - Class: 114
+      Script: {instanceID: 15028}
+    - Class: 114
+      Script: {instanceID: 15304}
+    - Class: 114
+      Script: {instanceID: 15468}
+    - Class: 114
+      Script: {instanceID: 15586}
+    - Class: 114
+      Script: {instanceID: 15680}
+    - Class: 114
+      Script: {instanceID: 15730}
+    - Class: 114
+      Script: {instanceID: 16072}
+    - Class: 114
+      Script: {instanceID: 16134}
+    - Class: 114
+      Script: {instanceID: 16362}
+    - Class: 114
+      Script: {instanceID: 16364}
+    - Class: 114
+      Script: {instanceID: 16394}
+    - Class: 114
+      Script: {instanceID: 16564}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 090a3c84271bd169fd6977e6879c7c00
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: UniversalRenderPipelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 8e968c6b723ee92d162d72a175bf4bed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Prototyping
+    className: SkeletonColorInitialize
+  - hash:
+      serializedVersion: 2
+      Hash: 6b0d26ff66f0bec06d867cf2931520e7
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Actor_Damageable
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 23d669c8bf2983ca4a3df160658318a6
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineStateDrivenCamera
+  - hash:
+      serializedVersion: 2
+      Hash: d6bc1134df4d5855b44632809aa3273a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: TwoByTwoTransformEffectExample
+  - hash:
+      serializedVersion: 2
+      Hash: 3c08375166df118bd1801438fc36b92f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 842c652983be2e2ef38dc612c9ba8257
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByTime
+  - hash:
+      serializedVersion: 2
+      Hash: de528d216919dab13c72d1f2402522d4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Prototyping
+    className: SpineEventUnityHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 5272f47f6745839878cd82ba42113893
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: FootSoldierExample
+  - hash:
+      serializedVersion: 2
+      Hash: 8c328a0ffa03c1bcb9332bb39f4f8453
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: Volume
+  - hash:
+      serializedVersion: 2
+      Hash: 87ff43d2baf3385cba327d8f803a4ebb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 626925ef558787b2d85c809198164d19
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: c88cdbb4d579cd1a33fcf30eca180fd7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HurtFlashEffect
+  - hash:
+      serializedVersion: 2
+      Hash: 30af5f62e532d3044e78a10afa87ab99
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: AnimationReferenceAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b7d58df3c6d92c60e3611c0a808aa0dc
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerBitField
+  - hash:
+      serializedVersion: 2
+      Hash: 2442cd864d8732441f2ea481567fc26e
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: MarkPointController
+  - hash:
+      serializedVersion: 2
+      Hash: 45a19c684713d0205ed64ed000601926
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyBodyTilt
+  - hash:
+      serializedVersion: 2
+      Hash: e32bacdd87cc28774b0d0e3e529f272f
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByOverlapBox2D
+  - hash:
+      serializedVersion: 2
+      Hash: 6be76c5c8c880d22b6f21af8b547fc8b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpawnFromSkeletonDataExample
+  - hash:
+      serializedVersion: 2
+      Hash: e8e6884f9aa59c3f25a5eb28f6416d62
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonRendererCustomMaterials
+  - hash:
+      serializedVersion: 2
+      Hash: 90a3045e168d25fd5433b99a4916ab2f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity
+    className: SkeletonAnimationFixedTimestep
+  - hash:
+      serializedVersion: 2
+      Hash: a2113831d3323f931007e1b3812dc814
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineFollowZoom
+  - hash:
+      serializedVersion: 2
+      Hash: 59d42223173237c4d6bb83ae8d770cb6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyFacialExpression
+  - hash:
+      serializedVersion: 2
+      Hash: 925d0ed6b9649835ff12192f8d8f2c3e
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Actor_AmmoController
+  - hash:
+      serializedVersion: 2
+      Hash: d227987243593b32ae57394d06018643
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineFixedSignal
+  - hash:
+      serializedVersion: 2
+      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 9ac327467393cb6c8045a2fd90ff67e2
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerPersistentCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVBox
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 7716ab5d00d63266d881e6e914efbff8
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_Rigidbody
+  - hash:
+      serializedVersion: 2
+      Hash: 5fcd6c83f4b9ef27fbcf701cc39abb93
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: Bloom
+  - hash:
+      serializedVersion: 2
+      Hash: fc169718e5fd24cea7425f24908c0418
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: PlayerInputManagerEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 93343307619bf220cf769cf3f801d64a
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByVideoPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: a5781dc71a671b1ad2b38de19f24b71f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 6587a156db474ef28253804d11d1a088
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Experimental.Rendering.Universal
+    className: Renderer2DData
+  - hash:
+      serializedVersion: 2
+      Hash: 959da2b1f0d9c782564e76c28882b8cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: MaterialReplacementExample
+  - hash:
+      serializedVersion: 2
+      Hash: 72712369a7c681ad84fc255a5ec0b333
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 499fd23433e68e265d153aa6b95d0047
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 48982140c520cbca517d0f96b60a0ba9
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: PostProcessData
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: abf1930d8126d0b2e00e9449129a0190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: f1fb891953e2bf6f29a35ea6724e2ffc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: EquipAssetExample
+  - hash:
+      serializedVersion: 2
+      Hash: c80bc562de10fdbf8b2e9bcb89d80421
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineCollisionImpulseSource
+  - hash:
+      serializedVersion: 2
+      Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 95e6797232b7d5831c9feb55a8582905
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: SplitToning
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 426e5bd616852254b77531cd1a8e29b6
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.OnScreen
+    className: OnScreenStick
+  - hash:
+      serializedVersion: 2
+      Hash: 7dbf450932234158be58ca2027563dcb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVector3
+  - hash:
+      serializedVersion: 2
+      Hash: 234235b9fb07320d11497e08a726cc56
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 296f8f538a294458c19d72696c3fcd09
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SetRigidbodySolverIterations
+  - hash:
+      serializedVersion: 2
+      Hash: 0e36de8a1e35035e5cd579b75a88f295
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: EventDataReferenceAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 6dd3dc11942e98c0a809c81f95fc960c
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineExternalCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 2db48df0b8c364def2db6b74f1d31519
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviourCondition_HoldingInput
+  - hash:
+      serializedVersion: 2
+      Hash: 0121504f19020194cd0d998174492d19
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_AddExplosionForce
+  - hash:
+      serializedVersion: 2
+      Hash: 54d8f12780f7f6df9b0603e66c9a5b3b
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: ColorCurves
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI.Editor
+    className: InputSystemUIInputModuleEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 35cd8c4a1fa392c7c05152af40f12ae9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: DummyMecanimControllerExample
+  - hash:
+      serializedVersion: 2
+      Hash: cdac52185b0f89129adfe460051fedc2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: HeroEffectsHandlerExample
+  - hash:
+      serializedVersion: 2
+      Hash: b5eb08b578a2f2d80bb106cbe65ab501
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineStoryboard
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: DraggableTransform
+  - hash:
+      serializedVersion: 2
+      Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 3da0167245797ee5f057d06cea5f19d4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonRagdoll2D
+  - hash:
+      serializedVersion: 2
+      Hash: 0dbc3be398b4869a5c8d0d8481ee402c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: ede3d522ce29a72deb2613abda57d11e
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: RemoteInputPlayerConnection
+  - hash:
+      serializedVersion: 2
+      Hash: cbae2ed2d2d53cc8f539e7cb4f29bc1f
+    assemblyName: Cinemachine.dll
+    namespaceName: 
+    className: CinemachineCameraOffset
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a64392c9c7fa5f308e759ee09dc48a65
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputActionEditorWindow
+  - hash:
+      serializedVersion: 2
+      Hash: b8b6652c91ec156e4590d6a8f7eff3be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonRagdoll
+  - hash:
+      serializedVersion: 2
+      Hash: 158ffb543d45ff9010f242d7a12154b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyBeginnerModel
+  - hash:
+      serializedVersion: 2
+      Hash: 8fd80153152f4fb2992d34dfd2b9417e
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviourCondition_IsGrounding
+  - hash:
+      serializedVersion: 2
+      Hash: 025060b320c5732c9996881b8c75eb6e
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_Int
+  - hash:
+      serializedVersion: 2
+      Hash: 1eb8bff41d5809bb899e0af5099aa9e0
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_CheckCondition
+  - hash:
+      serializedVersion: 2
+      Hash: 6e8b64dd9b0aa1221316c5849ceb8723
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_Float
+  - hash:
+      serializedVersion: 2
+      Hash: 1c8620de6f3d137ff6eea30ca437198d
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviourCondition_ActorStateFlag
+  - hash:
+      serializedVersion: 2
+      Hash: e0978a597b621db4180557fb5e5cd19e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyBeginnerInput
+  - hash:
+      serializedVersion: 2
+      Hash: bd3cf68c8964d3c66d1c43f4f98508c9
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a8afcbd0a467dd957879959591dec288
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.XR
+    className: TrackedPoseDriver
+  - hash:
+      serializedVersion: 2
+      Hash: 2d9abf9caa117da4d18b104e8c4728b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThrowSoundController
+  - hash:
+      serializedVersion: 2
+      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 91c66736e3507bbd3c15a9b02abea21b
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: LensDistortion
+  - hash:
+      serializedVersion: 2
+      Hash: 7d1a3e12579b7bd0f94909057ffba8d0
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: CameraSwitcher
+  - hash:
+      serializedVersion: 2
+      Hash: 522af6ad17aca828a2a0edd99445d832
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: AttackSpineboy
+  - hash:
+      serializedVersion: 2
+      Hash: bdb2aa563ff34cd96dfe8e46b3382012
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: ChromaticAberration
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: aad27eccffe0aef273af8cd17fbe0162
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorController
+  - hash:
+      serializedVersion: 2
+      Hash: 4e9333594897a1fb8b136ad2eae996c7
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 236d75210b730b326791db20759faa0b
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 3a60f239f99bf7ddd6b0c646bbde5447
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: TrackedDeviceRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 56b69fd124d87b205f0bba400d6c3eda
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonRenderSeparator
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: fe7743cb30437f8e91c6c7e66b48e614
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Event_GroundPound
+  - hash:
+      serializedVersion: 2
+      Hash: 60e15704ada6885942cb706a065a23d5
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: fd002ce50fbdb51fc26a9ad290e29e50
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpriteAttacher
+  - hash:
+      serializedVersion: 2
+      Hash: 5e1b42111795132786218294341ee87e
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: ForwardRendererData
+  - hash:
+      serializedVersion: 2
+      Hash: 666a1bc8d46f314c018ffaaa3f6628d1
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineFreeLook
+  - hash:
+      serializedVersion: 2
+      Hash: 7b0620fefc569aa905328f7404ae3954
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: UniversalAdditionalCameraData
+  - hash:
+      serializedVersion: 2
+      Hash: 06179a9b9659b4348e23909f52807da5
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Actor_EventController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: MecanimToAnimationHandleExample
+  - hash:
+      serializedVersion: 2
+      Hash: aba7b2852ef61d175dd9602e7723d5e5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: c24996ed6b6b9f183a2e9c389059b75f
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByLinecast2D
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: acf95b8a1582b7d5ec58788c494af70a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyPole
+  - hash:
+      serializedVersion: 2
+      Hash: 8c7e378c26a1c7916d18a5aa69cd1237
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_GroundPound
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine.PostFX
+    className: CinemachinePostProcessing
+  - hash:
+      serializedVersion: 2
+      Hash: 949a5890ce572ec240178521254b72e1
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: UIFoldout
+  - hash:
+      serializedVersion: 2
+      Hash: 8963690ef6f6b05ce03bfd8b5c26e20c
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: NoiseSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 22f6558e50a4fa49ebcab8093edab5ae
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: InputSystemUIInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: f5d254a814c5de35ac735056945f4232
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_DoubleJump
+  - hash:
+      serializedVersion: 2
+      Hash: 4cfed3a1a41a4a1b86c74026d4f70ede
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: EventCondition_GroundPounding
+  - hash:
+      serializedVersion: 2
+      Hash: f5e27be99dccc5e83fa39e0f9cd40f69
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_GravityIncrease
+  - hash:
+      serializedVersion: 2
+      Hash: 224cc3ed11fc4ce05258577d73a918ab
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_AddForce
+  - hash:
+      serializedVersion: 2
+      Hash: cca69927d43c4d329b1519f73fdc9fe6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: MixAndMatch
+  - hash:
+      serializedVersion: 2
+      Hash: 452034bc115721a46591769a06814093
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: PointFollower
+  - hash:
+      serializedVersion: 2
+      Hash: cc4274b586df3c02688bac01b88bd16c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: f6ea6065c7cb61fac452f68060741c2d
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: ActivateBasedOnFlipDirection
+  - hash:
+      serializedVersion: 2
+      Hash: 0fb27be807aa299702f28ad0bcad1f46
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Cinemachine.dll
+    namespaceName: 
+    className: CinemachineTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b8a5e8091ab0b8861d2add371082c5e0
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 1cdde0c3d8008dfe81d27e4c955d4fe7
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineFramingTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 64ad1bd05f4939fa76a6b091d9a9d755
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: PlayerInputManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 0a77988b4270dd51b1dba936ae1ddbb9
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 26d7d2bce07e4dacb1a0efc8c6b4082b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonUtilityEyeConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 31c16627de4d01cf0aee9576695b4fcc
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorStatus
+  - hash:
+      serializedVersion: 2
+      Hash: dbeab19c836bd50c0a0e371615445b64
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: FilmGrain
+  - hash:
+      serializedVersion: 2
+      Hash: e3a9d5756f1162dd7720942841561275
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: PlayerInput
+  - hash:
+      serializedVersion: 2
+      Hash: 1a716592de2564fed5c5b8425ef126f0
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviourGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 380d3ba99e2d836ad5d66bded133d128
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachinePOV
+  - hash:
+      serializedVersion: 2
+      Hash: 6be939d6f0aad748aa63a8815400aaa2
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: InputSettings
+  - hash:
+      serializedVersion: 2
+      Hash: b4672b813b40e30095d691cd7c29f752
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: ConstrainedCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 01f983f9d38b01678f53f074d6a9dd95
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Global_GameplayManager
+  - hash:
+      serializedVersion: 2
+      Hash: bb6330043875d7380d2670e40642e62a
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Item_SkillController
+  - hash:
+      serializedVersion: 2
+      Hash: e2956b115cc6a34c0cf3ed95218355a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyFreeze
+  - hash:
+      serializedVersion: 2
+      Hash: cd0ecdca0166232906c6f2df9dddc3d3
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputActionDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: bee2bc98f07f503bbd75bcaf68b47412
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputActionImporterEditor
+  - hash:
+      serializedVersion: 2
+      Hash: c71c88f6da145c9471019c1de5a9cb75
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_SearchPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 287a4aa7392bcfb309b4d7b4dc89eb3c
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: PlayerInputEditor
+  - hash:
+      serializedVersion: 2
+      Hash: cd48a96ab167746b0145cf24a3342daf
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity.Deprecated
+    className: SlotBlendModes
+  - hash:
+      serializedVersion: 2
+      Hash: d7d4cba233d35e15274fce80e1f89e6a
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_WallJump
+  - hash:
+      serializedVersion: 2
+      Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerIndirectToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 94db2103c0fae6e0fcda5d0287ad422c
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Actor_DamageablePart
+  - hash:
+      serializedVersion: 2
+      Hash: 879f6ae36a3561230a7d8fea2434e149
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByTime_GameObject
+  - hash:
+      serializedVersion: 2
+      Hash: e104e9108a2e305476bb18c8c73d0137
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyTargetController
+  - hash:
+      serializedVersion: 2
+      Hash: 51b05e403ce1da1805851f42af02f4bb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerGroup
+  - hash:
+      serializedVersion: 2
+      Hash: b3ab2106268377ffe25dd18ac23dca28
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: 2ce2187bbae6f802011f568630bd3d1f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineOrbitalTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: 601112efbb6ea9a5d557ad1b4ccf9be5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: CombinedSkin
+  - hash:
+      serializedVersion: 2
+      Hash: febc74874035282291dae993c318a29b
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByRaycast2D
+  - hash:
+      serializedVersion: 2
+      Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 5e2e01abde72fc0100a8229a6b7b21f0
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Actor_SpineAnimationController
+  - hash:
+      serializedVersion: 2
+      Hash: cbb85590c221399031f0fb84c4fd9cba
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonMecanim
+  - hash:
+      serializedVersion: 2
+      Hash: 852b1492445770494fa679c1020877fc
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByInputButton
+  - hash:
+      serializedVersion: 2
+      Hash: 7ca765ad7969aae95e8011264b9c4046
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineTriggerAction
+  - hash:
+      serializedVersion: 2
+      Hash: 5d10651ac800ecc73e0831192302408f
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByOverlapBox
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: DebugUpdater
+  - hash:
+      serializedVersion: 2
+      Hash: afeaecceabc8e81037939b66f6d91671
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: Goblins
+  - hash:
+      serializedVersion: 2
+      Hash: 8fd80153152f4fb2992d34dfd2b9417e
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviourCondition_IsWalling
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: bd543bad7f9f6262f10595aadb130d22
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineComposer
+  - hash:
+      serializedVersion: 2
+      Hash: 35791696cced542c4afa183e197ebd33
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByOverlapSphere
+  - hash:
+      serializedVersion: 2
+      Hash: 64a4e30fe0f86ca2e5530a0fc7cf1357
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviourCondition_HasSkill
+  - hash:
+      serializedVersion: 2
+      Hash: 87e68438e38a05e0a57949896bc84e6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: OutlineSkeletonGraphic
+  - hash:
+      serializedVersion: 2
+      Hash: f1c007b825586f4f8cde382bdfcfd9ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: BasicPlatformerController
+  - hash:
+      serializedVersion: 2
+      Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerToggleHistory
+  - hash:
+      serializedVersion: 2
+      Hash: 4070c176f60a566df9c88380b5248f00
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_DoCollisionDamage
+  - hash:
+      serializedVersion: 2
+      Hash: 2a97e169da02a10b9d63035ce1b8cdd0
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByMono
+  - hash:
+      serializedVersion: 2
+      Hash: 53457a83a86643df7486c9a17554adf4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyFootplanter
+  - hash:
+      serializedVersion: 2
+      Hash: bfeb96683d3796cadaab890bfdfe92be
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 15882a52798c275361cd0a3ada984ec5
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineDollyCart
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: a72735f963af123e8ae0d977d4b3224f
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonUtility
+  - hash:
+      serializedVersion: 2
+      Hash: 204ea02909ea3f738dafe3ff633d2a93
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineTrackedDolly
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Global_GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachinePipeline
+  - hash:
+      serializedVersion: 2
+      Hash: 5521d1f8c1bce1ae07245229da3e5ba3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: TransitionDictionaryExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 694d20920c0e41f567e119f7159a3644
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachinePath
+  - hash:
+      serializedVersion: 2
+      Hash: a9fa8b65ac4b5683de4a0779fd511cfc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineGauge
+  - hash:
+      serializedVersion: 2
+      Hash: c1f5356fcd27668ddc25078e27f9828d
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: MultiplayerEventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 4fd8bf02e3089425d3502e26c44ba31a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 4d51d5ccf37d2089bdfe827617b784ff
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: VolumeProfile
+  - hash:
+      serializedVersion: 2
+      Hash: ad4af01eeb7f0a9ae0be2df3e0f1953a
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputStateWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 9b06583966b5c25325233c4ef1ab1fd4
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.HID.Editor
+    className: HIDDescriptorWindow
+  - hash:
+      serializedVersion: 2
+      Hash: e039d1fda29d1afadead045e805bf95d
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByGetKey
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonGhostRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 0c9920fb850aff7b5ec756815b7a6fc1
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: ChannelMixer
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerEnumField
+  - hash:
+      serializedVersion: 2
+      Hash: feb9a5a121d15fa3654d4e50a5233045
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 841f439a20b4a381d5a0c5ec9e36deda
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: ColorLookup
+  - hash:
+      serializedVersion: 2
+      Hash: d3f29ba27f28c1f558880c4df5545ed3
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: 
+    className: DownloadableSample
+  - hash:
+      serializedVersion: 2
+      Hash: 56df1fa7cea034df9863fe5a24200a32
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineTargetGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 64f1d5e38ef00389c974885477f828c6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity
+    className: SkeletonAnimationMulti
+  - hash:
+      serializedVersion: 2
+      Hash: 5638704286073716143cc2ca580b50fc
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SpineAtlasAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerWidget
+  - hash:
+      serializedVersion: 2
+      Hash: 60e15704ada6885942cb706a065a23d5
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByCollision2D
+  - hash:
+      serializedVersion: 2
+      Hash: 5d5b0c61f3ab6ff5f41b1bbe19764526
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.OnScreen
+    className: OnScreenButton
+  - hash:
+      serializedVersion: 2
+      Hash: 40624bf70c8b3d398ed86c95b4df3ca0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: MixAndMatchGraphic
+  - hash:
+      serializedVersion: 2
+      Hash: 4694681bf754a46e5ee4de2aebf30b05
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: RaggedySpineboy
+  - hash:
+      serializedVersion: 2
+      Hash: f050e4ebd311386367bb1906f9218b01
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: UniversalAdditionalLightData
+  - hash:
+      serializedVersion: 2
+      Hash: 56cbd315914b921c8d3efe2b313d3d71
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SlotTintBlackFollower
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 79248edf585e679c097577487fd21eec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: AnimationMatchModifierAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 7c792393fb82488bd20139dcc5ba26d8
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: 295852e83016219fe0ab9a38fc36f74a
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: InputActionAsset
+  - hash:
+      serializedVersion: 2
+      Hash: a66794b62dbf044668a5f102bb7908c2
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineImpulseListener
+  - hash:
+      serializedVersion: 2
+      Hash: e85897ef4716a35619c8a4b8c1fe7cb6
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_AttackRange
+  - hash:
+      serializedVersion: 2
+      Hash: f40affa7a659216a5a81c407d4ce47ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonGhost
+  - hash:
+      serializedVersion: 2
+      Hash: fde9ba55e383c9342264d588ba9c63d2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonGraphicMirror
+  - hash:
+      serializedVersion: 2
+      Hash: efee5892f7c055f702a19e974636d580
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputDeviceDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 80089da4709006ec73f85efa84383736
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_Bool
+  - hash:
+      serializedVersion: 2
+      Hash: 67a99c72bf51722a004979b57db87178
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: MotionBlur
+  - hash:
+      serializedVersion: 2
+      Hash: 3e9d5772bfb43ba68b46ef8616536946
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_SetEventsGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 36666ac3689f8ae085146c224becaadd
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonDataAsset
+  - hash:
+      serializedVersion: 2
+      Hash: e6d75f1a9bc0c6f7085df0baa077e688
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineGroupComposer
+  - hash:
+      serializedVersion: 2
+      Hash: dbfb4270852b0008a423a7418d9de4cf
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineSameAsFollowTarget
+  - hash:
+      serializedVersion: 2
+      Hash: d97d7b9a12877bacdab61399e6be81a0
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByButton
+  - hash:
+      serializedVersion: 2
+      Hash: 4a639215e29265dd99e4fed19e3fa9f4
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineBlendListCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 36025d42bf23fda83a55bf1429201821
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerFoldout
+  - hash:
+      serializedVersion: 2
+      Hash: 923ba1efed8be1037cd17a8c4b7c45df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineboyBeginnerView
+  - hash:
+      serializedVersion: 2
+      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 60e15704ada6885942cb706a065a23d5
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByTrigger2D
+  - hash:
+      serializedVersion: 2
+      Hash: c9a8b80298a116835b51ba1cf9284367
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: b639d97cb780d0d99a2bfb3ad1935732
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineMixingCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputActionAssetEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 6027d1724ce006ef100f6304bac60394
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkeletonGraphicPlayAnimationAtEvent
+  - hash:
+      serializedVersion: 2
+      Hash: f0f5e53002e25de0379ad836d79b07d2
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_Transform
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_QuitApplication
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: f5d254a814c5de35ac735056945f4232
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_Walk
+  - hash:
+      serializedVersion: 2
+      Hash: 35a9693c388776aaf487636491a20f11
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: eeb356fa33eec10332ebc7e468fecb95
+    assemblyName: Cinemachine.dll
+    namespaceName: 
+    className: CinemachineShot
+  - hash:
+      serializedVersion: 2
+      Hash: f79e983672d079ff24eee15484fb74b8
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerColor
+  - hash:
+      serializedVersion: 2
+      Hash: e1300922cc039f41ab46a47f4cb05898
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: df21ffd1864551a3e43410f28754a73e
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineConfiner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 16f34339b33189a715646f8bb8fce768
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: BoneLocalOverride
+  - hash:
+      serializedVersion: 2
+      Hash: 1213c45db57250d85c58c6e805a6a2db
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonGraphic
+  - hash:
+      serializedVersion: 2
+      Hash: f31cfa1347c20204d77c3ef6524c1f66
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByRaycast
+  - hash:
+      serializedVersion: 2
+      Hash: 1e3d6222ff533d213aab144eb854a53b
+    assemblyName: Cinemachine.dll
+    namespaceName: 
+    className: CinemachineTouchInputMapper
+  - hash:
+      serializedVersion: 2
+      Hash: c506f5de23ec0494d4d9a5df5622a99e
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: BlendModeMaterialsAsset
+  - hash:
+      serializedVersion: 2
+      Hash: f5d254a814c5de35ac735056945f4232
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_PlayAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: 451dd7dc3ff4c554a6272a6ed7e8947d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineBeginnerTwo
+  - hash:
+      serializedVersion: 2
+      Hash: 5aada0b02f9c4427f1d576242370280d
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: KnifeFlyingController
+  - hash:
+      serializedVersion: 2
+      Hash: c1b15c745fd63a5ebcfc745252b6d789
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: BoneFollower
+  - hash:
+      serializedVersion: 2
+      Hash: df76de5fb2b27007d514fdb38b91cf89
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineVirtualCamera
+  - hash:
+      serializedVersion: 2
+      Hash: a64b8ff703a69f3352c424e9d0bc1c49
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: VolumeComponent
+  - hash:
+      serializedVersion: 2
+      Hash: c1933cc0a2f4ff6eb13333347497beb3
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GGJ2020.dll
+    namespaceName: Template
+    className: Event_Debug
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerFloatField
+  - hash:
+      serializedVersion: 2
+      Hash: 63bdc2cf3273aa9bf650350f19d2af61
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Experimental.Rendering.Universal
+    className: PixelPerfectCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event
+    className: DSC_Event_Time
+  - hash:
+      serializedVersion: 2
+      Hash: df819f0bc77c8d047eca1df91bbaa90d
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 0a3fa1a367fddc65eb32515029503334
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerButton
+  - hash:
+      serializedVersion: 2
+      Hash: 35833653c2072f11cb031e5542489afd
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: EventCondition_VelocityY
+  - hash:
+      serializedVersion: 2
+      Hash: 1a9d376c124c4705a3b00d874cbdcf57
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_Jump
+  - hash:
+      serializedVersion: 2
+      Hash: 597cfde2e60b842b3acbd2961ff0631b
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: ShadowsMidtonesHighlights
+  - hash:
+      serializedVersion: 2
+      Hash: c73b38d1734fde2c84da7bd282f19e54
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: Tonemapping
+  - hash:
+      serializedVersion: 2
+      Hash: 92a5c7deb691e0c09cd7e5e0be6aadd1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonUtilityGroundConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: b3a4697d03da27cbb8cf1ee4eeda029f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineBlinkPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: f9f37592b404590cce7c5df2214e6246
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: BoneFollowerGraphic
+  - hash:
+      serializedVersion: 2
+      Hash: 23b81d05a0ad0499613fc3e1a4a0501b
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: UniversalRenderPipelineEditorResources
+  - hash:
+      serializedVersion: 2
+      Hash: ad4579779a0ba7293b12314aca2e846b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonUtilityKinematicShadow
+  - hash:
+      serializedVersion: 2
+      Hash: 2395223e7876eb8ccf689f342164a951
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Experimental.Rendering.Universal
+    className: RenderObjects
+  - hash:
+      serializedVersion: 2
+      Hash: 6225eb0973ab0af667bc5f9d1b1b18de
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineCollider
+  - hash:
+      serializedVersion: 2
+      Hash: bd50beb95120324d8c4e8386692b6e82
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineBlenderSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 7518ba41ece96ba51868ad93de513f8a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpawnSkeletonGraphicExample
+  - hash:
+      serializedVersion: 2
+      Hash: bb7857e3bff0a34b919feb40ab25e1ba
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: BoundingBoxFollower
+  - hash:
+      serializedVersion: 2
+      Hash: c0201dbecd85f700bcdff493a272631d
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineImpulseSource
+  - hash:
+      serializedVersion: 2
+      Hash: 76aef43e801605d1829c8805eeee135c
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: InputActionReference
+  - hash:
+      serializedVersion: 2
+      Hash: debb53e3d6c95bc461d1704a7c06a69d
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_String
+  - hash:
+      serializedVersion: 2
+      Hash: 62b9b49eb438926ae33fdbd4ba994d3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: Rotator
+  - hash:
+      serializedVersion: 2
+      Hash: 3b760e6526e13f7504f59e210145899a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 5bf7f27a699be81660482a62cdc8848f
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_FlipFacing
+  - hash:
+      serializedVersion: 2
+      Hash: c54da3139cfe4286cef38e29e91d5793
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine.PostFX
+    className: CinemachineVolumeSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 6f29b049d6b6b18bee23aaf2fe273e02
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: ColorAdjustments
+  - hash:
+      serializedVersion: 2
+      Hash: f5d254a814c5de35ac735056945f4232
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: f336e086360abe49a3323e5f1583c35a
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: f69dfc6409fbbd89d3689368e99688a8
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVector2
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 35791696cced542c4afa183e197ebd33
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByOverlapCircle
+  - hash:
+      serializedVersion: 2
+      Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: d2fc47cabf794803ca83a9d8993057d8
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_SetEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 07fbec37e70d97ae0e2378051bdc0e8d
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: FollowLocationRigidbody2D
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerValue
+  - hash:
+      serializedVersion: 2
+      Hash: d00253ad71eb4c71e568b3846080bf92
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_FlyingAttack
+  - hash:
+      serializedVersion: 2
+      Hash: 6ff1c52123c50b3d73f35cd0e2e65dfd
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineSmoothPath
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineHardLookAt
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Experimental.Rendering.Universal
+    className: CinemachineUniversalPixelPerfect
+  - hash:
+      serializedVersion: 2
+      Hash: bffec639ae2a5f59dbe9bd3c32a864d5
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorInput
+  - hash:
+      serializedVersion: 2
+      Hash: c8f4fb98936488a42a618063622d6995
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: AtlasRegionAttacher
+  - hash:
+      serializedVersion: 2
+      Hash: 2772c0f1445dff38ab8f4318fb81225e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: Raptor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_LoadScene
+  - hash:
+      serializedVersion: 2
+      Hash: 1a9244b222b0ce8abf1630f8dbd4d1aa
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_GameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 9708cf5b8fabc9cdcee0b0f747b8b582
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_MoveBetweenMarkPoint
+  - hash:
+      serializedVersion: 2
+      Hash: 36112b0a16753cab0931521e4de67ef6
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: LiftGammaGain
+  - hash:
+      serializedVersion: 2
+      Hash: a7788865e0c8bfe9c4d78534c354734a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: EquipButtonExample
+  - hash:
+      serializedVersion: 2
+      Hash: ae30fbc1b3d9679e4d9fa867d7b9aa43
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviourCondition_Velocity
+  - hash:
+      serializedVersion: 2
+      Hash: e08a6cca7e60ff4f532c60d3e29f6452
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReloadSceneOnKeyDown
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonPartsRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 9f0d2156cb2876cc856eb040bfe23e76
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Experimental.Rendering.Universal
+    className: CompositeShadowCaster2D
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerUIntField
+  - hash:
+      serializedVersion: 2
+      Hash: 8e45ac56350a2483b7c7de86b565cf18
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: HandleEventWithAudioExample
+  - hash:
+      serializedVersion: 2
+      Hash: d791aa6007fa3640be1164ea75bb087d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: f83fd4067b24260ac246349ea6b351b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: MaterialPropertyBlockExample
+  - hash:
+      serializedVersion: 2
+      Hash: 9fc49739944f97b758989d5e160c8e85
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: SkeletonUtilityBone
+  - hash:
+      serializedVersion: 2
+      Hash: cd0ecdca0166232906c6f2df9dddc3d3
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: AdvancedDropdownWindow
+  - hash:
+      serializedVersion: 2
+      Hash: c5bfd0f6f4664318b8b9f50d88408421
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: DepthOfField
+  - hash:
+      serializedVersion: 2
+      Hash: 2cfa0393b5123bd14aa7b550fd8912e4
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Experimental.Rendering.Universal
+    className: ShadowCaster2D
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerEnumHistory
+  - hash:
+      serializedVersion: 2
+      Hash: 5dff84049174b160301fa52fb680a945
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Event_Damage
+  - hash:
+      serializedVersion: 2
+      Hash: 89229a620f85ef21de336ab85a13d351
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: b4f42d5cb0f7be7876b25c8fe2e4a253
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviourCondition
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1989b918911df30a76db45ca0997c8
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Actor_MarkPointController
+  - hash:
+      serializedVersion: 2
+      Hash: 616c801f27eb056ddeeeffac28dd4506
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: EquipsVisualsComponentExample
+  - hash:
+      serializedVersion: 2
+      Hash: e9eb0a3732e46290c5b4bf45a554fe6e
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: FollowLocationRigidbody
+  - hash:
+      serializedVersion: 2
+      Hash: e9eb0a3732e46290c5b4bf45a554fe6e
+    assemblyName: spine-unity.dll
+    namespaceName: Spine.Unity
+    className: FollowSkeletonUtilityRootRotation
+  - hash:
+      serializedVersion: 2
+      Hash: a471e6acca6ff4c5875cf3e0bc3905ff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: JitterEffectExample
+  - hash:
+      serializedVersion: 2
+      Hash: df434544c9f7b33d1cc7e635b180d279
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 3165968ba45c74472d279ba04455fccb
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: cd1e91f5afed259a1512bbf18dc12bd7
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: 
+    className: SceneRenderPipeline
+  - hash:
+      serializedVersion: 2
+      Hash: c24996ed6b6b9f183a2e9c389059b75f
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByLinecast
+  - hash:
+      serializedVersion: 2
+      Hash: 7c07b6fe2e95fe7b187606a3b84c80b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SpineAnimationTesterTool
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachinePixelPerfect
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: d5563734ca789067dd519c17d07d623b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: SkeletonAnimationHandleExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: Spineboy
+  - hash:
+      serializedVersion: 2
+      Hash: 60e15704ada6885942cb706a065a23d5
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByCollision
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 8649814970b42d345b89944b862453cc
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestRunner.Utils
+    className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4517cdc95a2f2da77b1a6992d77affdb
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_RunEventsByEventGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 1351a1bf2c4086539cf0063006375478
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineBrain
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner
+    className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 134520f170644886bce038a4038a42c9
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: PaniniProjection
+  - hash:
+      serializedVersion: 2
+      Hash: 2aeeec1b1a144c469cd2d37776bc2315
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: bb6b9a25e695d7981ce2d853a697a828
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVector4
+  - hash:
+      serializedVersion: 2
+      Hash: 1ea1be3869486f2c226493554db749e2
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: FollowGameObjectController
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerIntField
+  - hash:
+      serializedVersion: 2
+      Hash: dbfb4270852b0008a423a7418d9de4cf
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineHardLockToTarget
+  - hash:
+      serializedVersion: 2
+      Hash: ca0b8ad3987cd33b3209a508b6e1562e
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: FreeCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 8d388743d7d435e0a4021fd95826e140
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: EquipSystemExample
+  - hash:
+      serializedVersion: 2
+      Hash: b5c3dbcb94925c8b595ad16a62b44788
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineBasicMultiChannelPerlin
+  - hash:
+      serializedVersion: 2
+      Hash: aa88ae22474df55295327e4ee99e5a24
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerHBox
+  - hash:
+      serializedVersion: 2
+      Hash: 8220b46879dc5e37db1b940c938f5744
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 069348039d802d2543996497575a324b
+    assemblyName: DSC.Event.Helper.dll
+    namespaceName: DSC.Event.Helper
+    className: DSC_Event_AddForce2D
+  - hash:
+      serializedVersion: 2
+      Hash: 2792936179724025482dc04d68a47ca7
+    assemblyName: Cinemachine.dll
+    namespaceName: Cinemachine
+    className: CinemachineClearShot
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: f963e978a3c043c714871252c397c621
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: FlyingController
+  - hash:
+      serializedVersion: 2
+      Hash: 4ab9c6ef5ed7f2e061a3f9c9ff1bfa52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Spine.Unity.Examples
+    className: DataAssetsFromExportsExample
+  - hash:
+      serializedVersion: 2
+      Hash: 098b08e77f16fc740b87d79978b382b6
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Experimental.Rendering.Universal
+    className: Light2D
+  - hash:
+      serializedVersion: 2
+      Hash: 880d064aa7bf32abd8295b0fe07bcc13
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: InputSystemObject
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 08705cef837f5d18a4c86b19b1ccf347
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: Vignette
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.EnhancedTouch
+    className: TouchSimulation
+  - hash:
+      serializedVersion: 2
+      Hash: 8b8b18ce5ce466450710494b38db41e5
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: WhiteBalance
+  - hash:
+      serializedVersion: 2
+      Hash: 2388eb9e99b86b3813e7b6dbfe4b3e0c
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerIndirectFloatField
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Actor_AIController
+  - hash:
+      serializedVersion: 2
+      Hash: 7f5b11981091e5d595e55fd87503a5ba
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: DSC_ActorBehaviour_Boss_Attack
+  - hash:
+      serializedVersion: 2
+      Hash: 78bcafb96ea6524a1305dd758183968b
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Event_StoneDrop
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: HurtImageController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Event_Skill
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Event_DropItem
+  - hash:
+      serializedVersion: 2
+      Hash: 771723a7012636cae49f4c6334022c60
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: GameOverController
+  - hash:
+      serializedVersion: 2
+      Hash: ec46d8aa1014e3a35e0e57ac6a03942b
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: GetItemController
+  - hash:
+      serializedVersion: 2
+      Hash: aa4fa89c68cdf6714fc8d0ebb26d6449
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueData
+  - hash:
+      serializedVersion: 2
+      Hash: 732498d843af704278134dbfeb36ec8e
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_AudioSourceGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 597707a719950a51b4f3b7fa9852a887
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_ChoiceGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 72687452b76a8c0499c8a158ff355213
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_ImageGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: dd1da4ff8b4d7c3efce0f84c240ff5d7
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_AudioSourceSet
+  - hash:
+      serializedVersion: 2
+      Hash: ba9c363875ddf15b1f6332df3efad3fe
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_SetEnable
+  - hash:
+      serializedVersion: 2
+      Hash: 1253d1595f9253f5f4e271e5e532889a
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_GameObjectGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 7a350a7773beb38f93876ff0e81acf7d
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_UnityEventRun
+  - hash:
+      serializedVersion: 2
+      Hash: 60a6ce591535f126ad9a06fc97d582dc
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_StartDialogue
+  - hash:
+      serializedVersion: 2
+      Hash: 567af9f8cb0967d01f31487592876820
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_UnityEventGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 63bd6bdcbe7e6aafc2851db1cf7af3be
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEventGroup
+  - hash:
+      serializedVersion: 2
+      Hash: eac6ef197be3b1a5ce87b0a582576102
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_CanvasGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: cda5958e2fff1c7e33a5f74e18c461ac
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_ReplaceController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_TextController
+  - hash:
+      serializedVersion: 2
+      Hash: 0c6b8a3a20bcf9d9b4eaf2d6176fa2d7
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEventEnd
+  - hash:
+      serializedVersion: 2
+      Hash: b53d1840b51b1a43d38ff9a9c64de6ec
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEventChoice
+  - hash:
+      serializedVersion: 2
+      Hash: ef0252f1d5dda0574fbbebbe48defd64
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_TextGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 7c24c9b24081fed4a8a2fbafbfb5725d
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueReplace
+  - hash:
+      serializedVersion: 2
+      Hash: be8a00a07f8893d087c0be6c0fd21d26
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_TypingSet
+  - hash:
+      serializedVersion: 2
+      Hash: 2301018fc6adda7ec59776c155c029b3
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_TextAlign
+  - hash:
+      serializedVersion: 2
+      Hash: e34baafeedebeed41e3dab70b7d27811
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_DataController
+  - hash:
+      serializedVersion: 2
+      Hash: 60b1cb2950ab596e62c36780829c72e4
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_RawImageColor
+  - hash:
+      serializedVersion: 2
+      Hash: 209466ed07d9eca433cf8d3065c96203
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_ImageSet
+  - hash:
+      serializedVersion: 2
+      Hash: 10a75c6ae982cefd65d0207ccc5a6281
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_EventController
+  - hash:
+      serializedVersion: 2
+      Hash: 85e8ffd08d3d6c2fd7bf3eb690ec3b1d
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEventDelay
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent
+  - hash:
+      serializedVersion: 2
+      Hash: be1f9516ee1d3eeca2d5c9edd2cc2c59
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_RawImageSet
+  - hash:
+      serializedVersion: 2
+      Hash: 442eddc7d2cf6f51e662a84f2b819f6c
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_RawImageGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 6397cdbfefd7fe4cf0faf9e47effc7df
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_ButtonGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 60b1cb2950ab596e62c36780829c72e4
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_ImageColor
+  - hash:
+      serializedVersion: 2
+      Hash: 5aef340015835a980deac78d1c9ce49a
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_SceneLoad
+  - hash:
+      serializedVersion: 2
+      Hash: 49f39539e7fa89fe7afa397c780b0e57
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_ChoiceController
+  - hash:
+      serializedVersion: 2
+      Hash: 115471d246ea16b9d01721e17b1042fa
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DialogueEvent_TextColor
+  - hash:
+      serializedVersion: 2
+      Hash: 6f9039a4be17a4c9f6aa90f6810a0cab
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_UnityEventController
+  - hash:
+      serializedVersion: 2
+      Hash: 22c397b735fa3d0dc084ec6e071f03d4
+    assemblyName: DSC.Dialogue.dll
+    namespaceName: DSC.Dialogue
+    className: DSC_Dialogue_TypingController
+  - hash:
+      serializedVersion: 2
+      Hash: 5a40878878281d81631261278e963d12
+    assemblyName: DSC.UI.dll
+    namespaceName: DSC.UI
+    className: DSC_UI_ImageGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: ef9b6472949149343d7e17196547ecbd
+    assemblyName: DSC.UI.dll
+    namespaceName: DSC.UI
+    className: DSC_UI_ButtonGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: c0d4c38d2f99426edae6cd880ad94738
+    assemblyName: DSC.UI.dll
+    namespaceName: DSC.UI
+    className: DSC_UI_TextGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 3b727ac77cdfded67da76ec1a7f66410
+    assemblyName: DSC.UI.dll
+    namespaceName: DSC.UI
+    className: DSC_UI_RawImageGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: e2085b32b39c6228f7a7976aac4dc345
+    assemblyName: DSC.UI.dll
+    namespaceName: DSC.UI
+    className: DSC_UI_CanvasGroupController
+  - hash:
+      serializedVersion: 2
+      Hash: 599f588909056524eeb42d294576b994
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
+  - hash:
+      serializedVersion: 2
+      Hash: dfac75f93e3018302c0ae081381ebb05
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Move
+  - hash:
+      serializedVersion: 2
+      Hash: 5f0b584d777da0185f600d57f3f6a7c3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToScene
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Event_MyTimeScale
+  - hash:
+      serializedVersion: 2
+      Hash: 6e845ba731dcd9beaaefcf44719fdfcd
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: Event_Animator
+  - hash:
+      serializedVersion: 2
+      Hash: a13e360f8c7ad6e7f2aa5b705d76a0a6
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: TimeOutController
+  - hash:
+      serializedVersion: 2
+      Hash: 31cb74e428e9201160a5821fe60d0f89
+    assemblyName: GGJ2020.dll
+    namespaceName: GGJ2020
+    className: SimpleCameraShakeInCinemachine
+  platform: 5
+  scenePathNames:
+  - Assets/MainAsset/Scenes/TitleScene.unity
+  - Assets/MainAsset/Scenes/GameplayScene.unity
+  - Assets/MainAsset/Scenes/EndingScene.unity
+  - Assets/Credit_Page/Credit.unity
+  - Assets/Mo/Scenes/MoScene.unity
+  playerPath: C:/Users/supaw/Desktop/Unity/Unity Projects/Global Game Jam 2020/Builds/Test/Global
+    Game Jam 2020.exe

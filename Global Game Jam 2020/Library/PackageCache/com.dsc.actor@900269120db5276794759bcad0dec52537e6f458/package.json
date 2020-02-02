@@ -1,0 +1,31 @@
+{
+    "name": "com.dsc.actor",
+    "author": "Supawich Dechpuwarat",
+    "displayName": "DSC Actor",
+    "version": "0.1.7-preview.1",
+    "unity": "2019.3",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DeStiCap/DSC-Actor.git",
+		"revision": "d5b2ddab35cca223d8f7cb300fc881c0fbafdb22"
+	},
+	"description": "Actor system for unity.",
+    "keywords": [
+        "Actor"
+    ],   
+	"dependencies": {
+		"com.unity.inputsystem": "1.0.0-preview.4"
+	},
+    "samples": [
+        {
+            "displayName": "Actor Template",
+            "description": "Template for actor system.",
+            "path": "Samples~/ActorTemplate"
+        },
+		{
+            "displayName": "SideScrolling2D Template",
+            "description": "Template for side scrolling 2D game.",
+            "path": "Samples~/SideScrolling2D"
+        }
+    ]
+}

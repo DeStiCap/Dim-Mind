@@ -1,0 +1,17 @@
+{
+    "name": "DSC.Dialogue.Editor",
+    "references": [
+        "GUID:658b01209bb16794f813c10d6e23d9d8"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

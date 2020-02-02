@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12b7926d56559848a6f75f105a76dab, type: 3}
+  m_Name: Behaviour_SearchPlayer
+  m_EditorClassIdentifier: 
+  m_arrCondition:
+  - {fileID: 11400000, guid: bb9b81b1e65ca764a9db79df51cc22b4, type: 2}
+  m_eType: 0
+  m_fSightXRange: 6
+  m_fSightAngle: 75

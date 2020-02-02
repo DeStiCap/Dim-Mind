@@ -1,0 +1,17 @@
+{
+    "name": "DSC.Event.Helper",
+    "references": [
+        "GUID:acff8e849db7dec488c770445e10185e",
+        "GUID:8e581967bbd6f2e4b9af519dce17e3f0",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,19 @@
+{
+    "name": "com.dsc.ui",
+    "author": "Supawich Dechpuwarat",
+    "displayName": "DSC UI",
+    "version": "0.0.2-preview.1",
+    "unity": "2019.3",
+    "keywords": [
+        "UI"
+    ],
+    "description": "UI for helper plugin.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DeStiCap/DSC-UI.git",
+		"revision": "fea193e501e3ea78af486efa9817f5350ad80d7c"
+	},
+	"dependencies": {
+		"com.unity.textmeshpro": "2.0.1"
+	}
+}

@@ -1,0 +1,17 @@
+{
+    "name": "DSC.Core.Editor",
+    "references": [
+        "GUID:acff8e849db7dec488c770445e10185e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

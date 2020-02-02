@@ -1,0 +1,19 @@
+{
+    "name": "com.dsc.event",
+    "author": "Supawich Dechpuwarat",
+    "displayName": "DSC Event",
+    "version": "0.1.11-preview.1",
+    "unity": "2019.3",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DeStiCap/DSC-Event.git",
+		"revision": "c568f82adaa6925726cd5f9d4ad4e5419ac95007"
+	},
+	"description": "Helper plugin for event in game.",
+    "keywords": [
+        "Event"
+    ],
+	"dependencies": {
+		"com.unity.inputsystem": "1.0.0-preview.4"
+	}
+}

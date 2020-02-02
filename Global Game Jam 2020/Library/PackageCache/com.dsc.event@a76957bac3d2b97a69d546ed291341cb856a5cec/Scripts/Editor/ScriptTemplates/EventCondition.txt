@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DSC.Event;
+
+namespace Template
+{
+    [CreateAssetMenu(fileName = "EventCondition_#SCRIPTNAME#", menuName = "DSC/Event/Condition/#SCRIPTNAME#")]
+    public class #SCRIPTNAME# : EventCondition
+    {
+        #region Variable - Inspector
+#pragma warning disable 0649
+
+#pragma warning restore 0649
+        #endregion
+
+        #region Base - Override
+
+        public override bool PassCondition(EventConditionData hData)
+        {
+            return true;
+        }
+
+        #endregion
+    }
+}

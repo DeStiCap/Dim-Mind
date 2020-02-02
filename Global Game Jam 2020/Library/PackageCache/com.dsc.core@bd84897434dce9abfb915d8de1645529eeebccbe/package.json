@@ -1,0 +1,16 @@
+{
+    "name": "com.dsc.core",
+    "author": "Supawich Dechpuwarat",
+    "displayName": "DSC Core",
+    "version": "0.0.9-preview.3",
+    "unity": "2019.3",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DeStiCap/DSC-Core.git",
+		"revision": "2bef026dc0aea6b37c683bc2184ba2b0e5dcb7dd"
+	},
+	"description": "Core for helper plugin.",
+    "keywords": [
+        "Core"
+    ]	
+}

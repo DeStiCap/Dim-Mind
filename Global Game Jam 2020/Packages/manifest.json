@@ -1,0 +1,75 @@
+{
+  "dependencies": {
+    "com.dsc.actor": "https://github.com/DeStiCap/DSC-Actor.git",
+    "com.dsc.core": "https://github.com/DeStiCap/DSC-Core.git",
+    "com.dsc.dialogue": "https://github.com/DeStiCap/DSC-Dialogue.git",
+    "com.dsc.event": "https://github.com/DeStiCap/DSC-Event.git",
+    "com.dsc.ui": "https://github.com/DeStiCap/DSC-UI.git",
+    "com.esotericsoftware.spine.urp-shaders": "file:C:/Users/supaw/Desktop/com.esotericsoftware.spine.urp-shaders-3.8-2019.3",
+    "com.unity.2d.sprite": "1.0.0",
+    "com.unity.2d.tilemap": "1.0.0",
+    "com.unity.cinemachine": "2.5.0",
+    "com.unity.collab-proxy": "1.2.16",
+    "com.unity.ide.rider": "1.1.4",
+    "com.unity.ide.vscode": "1.1.4",
+    "com.unity.quicksearch": "1.5.1",
+    "com.unity.render-pipelines.universal": "7.1.8",
+    "com.unity.test-framework": "1.1.9",
+    "com.unity.textmeshpro": "2.0.1",
+    "com.unity.timeline": "1.2.10",
+    "com.unity.ugui": "1.0.0",
+    "com.unity.modules.ai": "1.0.0",
+    "com.unity.modules.androidjni": "1.0.0",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.assetbundle": "1.0.0",
+    "com.unity.modules.audio": "1.0.0",
+    "com.unity.modules.cloth": "1.0.0",
+    "com.unity.modules.director": "1.0.0",
+    "com.unity.modules.imageconversion": "1.0.0",
+    "com.unity.modules.imgui": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.modules.physics2d": "1.0.0",
+    "com.unity.modules.screencapture": "1.0.0",
+    "com.unity.modules.terrain": "1.0.0",
+    "com.unity.modules.terrainphysics": "1.0.0",
+    "com.unity.modules.tilemap": "1.0.0",
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.modules.uielements": "1.0.0",
+    "com.unity.modules.umbra": "1.0.0",
+    "com.unity.modules.unityanalytics": "1.0.0",
+    "com.unity.modules.unitywebrequest": "1.0.0",
+    "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+    "com.unity.modules.unitywebrequestaudio": "1.0.0",
+    "com.unity.modules.unitywebrequesttexture": "1.0.0",
+    "com.unity.modules.unitywebrequestwww": "1.0.0",
+    "com.unity.modules.vehicles": "1.0.0",
+    "com.unity.modules.video": "1.0.0",
+    "com.unity.modules.vr": "1.0.0",
+    "com.unity.modules.wind": "1.0.0",
+    "com.unity.modules.xr": "1.0.0"
+  },
+  "lock": {
+    "com.dsc.actor": {
+      "revision": "HEAD",
+      "hash": "900269120db5276794759bcad0dec52537e6f458"
+    },
+    "com.dsc.core": {
+      "revision": "HEAD",
+      "hash": "bd84897434dce9abfb915d8de1645529eeebccbe"
+    },
+    "com.dsc.dialogue": {
+      "revision": "HEAD",
+      "hash": "d1ceae47d69c674cf428eadb55687653c0575c83"
+    },
+    "com.dsc.event": {
+      "revision": "HEAD",
+      "hash": "a76957bac3d2b97a69d546ed291341cb856a5cec"
+    },
+    "com.dsc.ui": {
+      "revision": "HEAD",
+      "hash": "67d56d4134c1eb6a8e3dd3d2aaf7e52f233209bb"
+    }
+  }
+}
