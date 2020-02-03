@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using DSC.Core;
 
 namespace GGJ2020
@@ -13,6 +14,10 @@ namespace GGJ2020
 #pragma warning disable 0649
 
         [SerializeField] protected bool m_bCanBreakRock;
+        [SerializeField] protected Transform m_hHitParticalPrefab;
+
+        [Header("Events")]
+        [SerializeField] protected UnityEvent m_hHitEvent;
 
 #pragma warning restore 0649
         #endregion
@@ -38,7 +43,13 @@ namespace GGJ2020
             if (!collision.CompareTag(TagUtility.Name.player))
             {
                 if (canBreakRock && collision.CompareTag(TagUtility.Name.rock))
-                    collision.gameObject.SetActive(false);
+                {
+                    var hDestroyable = collision.GetComponent<IDestroyable>();
+                    if(hDestroyable != null)
+                    {
+                        hDestroyable.Destroy();
+                    }
+                }
 
                 if (owner) {
                     var hDamageable = collision.GetComponent<IDamageable>();
@@ -48,6 +59,13 @@ namespace GGJ2020
                     }
                 }
 
+                if (m_hHitParticalPrefab)
+                {
+                    var hPartical = Instantiate(m_hHitParticalPrefab, transform.position, Quaternion.identity);
+                    
+                }
+
+                m_hHitEvent?.Invoke();
                 gameObject.SetActive(false);
             }
         }

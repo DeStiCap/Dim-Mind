@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3309314223495478188}
   - component: {fileID: 3913971944360174214}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MainBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,3 +153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_eSkill: 0
+  m_hGetEvent:
+    m_PersistentCalls:
+      m_Calls: []

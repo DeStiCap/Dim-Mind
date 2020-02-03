@@ -19,6 +19,8 @@ namespace GGJ2020
         [Min(0)]
         [SerializeField] protected float m_fIFrameAfterDamageDuration;
 
+        [SerializeField] protected AudioClip m_hTakeDamageSound;
+
         [Header("Events")]
         [SerializeField] protected UnityEvent m_hDeadEvent;
 
@@ -84,7 +86,7 @@ namespace GGJ2020
 
                 m_hActorController.deadEvent?.Invoke();
 
-                if (m_hActorController.actorData.m_hActor.CompareTag(TagUtility.Name.player))
+                if (m_hActorController.actorData.m_hActor.CompareTag(TagUtility.Name.player) && !Global_GameplayManager.winGame)
                 {
                     Global_GameplayManager.PlayerDead();
                 }
@@ -99,6 +101,13 @@ namespace GGJ2020
                     m_hActorController.actorData.m_hAnimation.m_sDamageAnimation, false);
 
                 hAnim.SetEmptyAnimation(1,0);
+
+                m_hActorController.actorData.m_eCurrentAnimation = ActorAnimation.Hurting;
+            }
+
+            if(m_hActorController.actorData.m_hAudio && m_hTakeDamageSound)
+            {
+                m_hActorController.actorData.m_hAudio.PlayOneShot(m_hTakeDamageSound);
             }
 
             m_hActorController.actorData.m_eStateFlag |= ActorStateFlag.IsDamage;

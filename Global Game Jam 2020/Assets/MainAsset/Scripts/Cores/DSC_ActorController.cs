@@ -80,7 +80,8 @@ namespace GGJ2020
         {
             if (gameObject.CompareTag(TagUtility.Name.player))
             {
-                Global_GameplayManager.timeOut?.AddListener(TimeOut);
+                Global_GameplayManager.winGame = false;
+                Global_GameplayManager.timeOut?.AddListener(OnTimeOut);
             }
 
             StartAllBehaviour();
@@ -90,7 +91,7 @@ namespace GGJ2020
         {
             if (gameObject.CompareTag(TagUtility.Name.player))
             {
-                Global_GameplayManager.timeOut?.RemoveListener(TimeOut);
+                Global_GameplayManager.timeOut?.RemoveListener(OnTimeOut);
             }
 
             StopAllBehaviour();
@@ -167,6 +168,14 @@ namespace GGJ2020
                 return;
 
             FixedExecuteBehaviour();
+
+            if (FlagUtility.HasFlagUnsafe(m_hData.m_eStateFlag,ActorStateFlag.Jumping) && m_hData.m_hRigid)
+            {
+                if(Time.time >= m_hData.m_fJumpStartTime + 0.05f && m_hData.m_hRigid.velocity.y <= 0)
+                {
+                    m_hData.m_eStateFlag &= ~ActorStateFlag.Jumping;
+                }
+            }
         }
 
         protected virtual void LateUpdate()
@@ -257,8 +266,15 @@ namespace GGJ2020
             }
         }
 
-        public void TimeOut()
+        public void OnTimeOut()
         {
+            if (!m_hData.m_hInputData.m_bPressInput)
+            {
+                Global_GameplayManager.winGame = true;
+                Global_GameplayManager.winGameEvent?.Invoke();
+                return;
+            }
+
             var hDamageable = GetComponent<IDamageable>();
             if(hDamageable != null)
             {

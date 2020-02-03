@@ -166,7 +166,15 @@ namespace GGJ2020
             if (actorData == null)
                 return;
 
+           
+
             var hInput = m_hActorData.m_hInputData;
+
+            if(fHorizontal != 0 || fVertical != 0)
+            {
+                hInput.m_bPressInput = true;
+            }
+
             InputUtility.CalculateAxis(ref hInput.m_fHorizontal, fHorizontal, m_fSensitivity, m_fGravity, Time.deltaTime);
             InputUtility.CalculateAxis(ref hInput.m_fVertical, fVertical, m_fSensitivity, m_fGravity, Time.deltaTime);
             m_hActorData.m_hInputData = hInput;
@@ -192,6 +200,9 @@ namespace GGJ2020
             if (actorData == null)
                 return;
 
+            var hInput = m_hActorData.m_hInputData;
+            hInput.m_bPressInput = true;
+            m_hActorData.m_hInputData = hInput;
             m_hActorData.m_hInputData.m_hInputCallback?.Run((eEventType, eGetType), m_hActorData, m_hActorController.listBehaviourData);
         }
 

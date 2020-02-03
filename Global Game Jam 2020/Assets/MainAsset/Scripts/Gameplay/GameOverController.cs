@@ -45,6 +45,16 @@ namespace GGJ2020
         {
             m_hGameOverEvent?.Invoke();
 
+            SpawnDeadPartical();
+        }
+
+
+        #endregion
+
+        #region Main
+
+        protected void SpawnDeadPartical()
+        {
             var hPartical = Instantiate(m_hDeadParticle, Global_GameplayManager.playerController.actorData.m_hActor.position, Quaternion.identity);
         }
 

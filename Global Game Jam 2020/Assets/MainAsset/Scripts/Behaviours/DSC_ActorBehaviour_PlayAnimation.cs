@@ -37,10 +37,10 @@ namespace GGJ2020
 
             if(hActorData.m_eCurrentAnimation == ActorAnimation.Airing)
             {
-                if (vVelocity.y <= 0 && FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag, ActorStateFlag.IsGrounding) && !FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag,ActorStateFlag.HoldingJump))
+                if (vVelocity.y <= 0 && FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag, ActorStateFlag.IsGrounding) && !FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag,ActorStateFlag.Jumping))
                 {
                     hAnim.SetAnimation(0, hActorData.m_hAnimation.m_sLandingAnimation, false);
-                    hAnim.AddAnimation(0, hActorData.m_hAnimation.m_sIdleAnimation, true,0.2f);
+                    hAnim.AddAnimation(0, hActorData.m_hAnimation.m_sIdleAnimation, true,0.1f);
                     hActorData.m_eCurrentAnimation = ActorAnimation.Idle;
                 }
             }

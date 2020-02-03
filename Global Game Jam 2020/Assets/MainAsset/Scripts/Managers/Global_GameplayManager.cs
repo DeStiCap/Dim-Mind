@@ -143,6 +143,36 @@ namespace GGJ2020
             }
         }
 
+        public static UnityEvent winGameEvent
+        {
+            get
+            {
+                if (instance == null)
+                    return null;
+
+                return m_hInstance.m_hhWinGameEvent;
+            }
+        }
+
+        public static bool winGame
+        {
+            get
+            {
+                if (instance == null)
+                    return false;
+
+                return m_hInstance.m_bWinGame;
+            }
+
+            set
+            {
+                if (instance == null)
+                    return;
+
+                m_hInstance.m_bWinGame = value;
+            }
+        }
+
         #endregion
 
         static Global_GameplayManager m_hInstance;
@@ -156,6 +186,10 @@ namespace GGJ2020
         EventSkill m_hGetItemEvent = new EventSkill();
 
         UnityEvent m_hTimeOut = new UnityEvent();
+
+        UnityEvent m_hhWinGameEvent = new UnityEvent();
+
+        bool m_bWinGame;
 
         float m_fMyTimeScale = 1;
 

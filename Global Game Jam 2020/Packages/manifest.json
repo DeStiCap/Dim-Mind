@@ -61,11 +61,11 @@
     },
     "com.dsc.dialogue": {
       "revision": "HEAD",
-      "hash": "d1ceae47d69c674cf428eadb55687653c0575c83"
+      "hash": "c921575edf720cbc4e7903889327a95f09ce8447"
     },
     "com.dsc.event": {
       "revision": "HEAD",
-      "hash": "a76957bac3d2b97a69d546ed291341cb856a5cec"
+      "hash": "1c8e5b40408299f7d93d91f1c77823d554f637fb"
     },
     "com.dsc.ui": {
       "revision": "HEAD",

@@ -109,6 +109,8 @@ namespace GGJ2020
 
             hActorData.m_hRigid.AddForce(vForce);
 
+            hActorData.m_fJumpStartTime = Time.time;
+            hActorData.m_eStateFlag |= ActorStateFlag.Jumping;
             hActorData.m_eStateFlag |= ActorStateFlag.HoldingJump;
             hActorData.m_eStateFlag |= ActorStateFlag.WallJumping;
             hData.m_fWallJumpLastTime = Time.time;

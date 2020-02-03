@@ -17,6 +17,6 @@ MonoBehaviour:
   m_eType: 0
   m_arrAttackData:
   - m_nEventIndex: 0
-    m_fAttackEndDelay: 3
+    m_fAttackEndDelay: 1.5
   - m_nEventIndex: 1
-    m_fAttackEndDelay: 0.6
+    m_fAttackEndDelay: 0.4

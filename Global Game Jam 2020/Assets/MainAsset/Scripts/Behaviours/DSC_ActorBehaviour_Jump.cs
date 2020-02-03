@@ -84,10 +84,13 @@ namespace GGJ2020
 
             hActorData.m_hRigid.AddForce(new Vector2(0, hActorData.m_hStatus.status.m_fJumpForce));
 
+            hActorData.m_fJumpStartTime = Time.time;
+            hActorData.m_eStateFlag |= ActorStateFlag.Jumping;
+
             if(hActorData.m_hAnimation != null)
             {
                 hActorData.m_hAnimation.m_hSpineAnimationState.SetAnimation(0, hActorData.m_hAnimation.m_sJumpStartAnimation, false);
-                hActorData.m_hAnimation.m_hSpineAnimationState.AddAnimation(0, hActorData.m_hAnimation.m_sJumpingAnimation, true,0.2f);
+                hActorData.m_hAnimation.m_hSpineAnimationState.AddAnimation(0, hActorData.m_hAnimation.m_sJumpingAnimation, true,0.1f);
                 hActorData.m_eCurrentAnimation = ActorAnimation.Airing;
             }
 

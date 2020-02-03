@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogueData_GetItem03
   m_EditorClassIdentifier: 
   m_arrDialogue:
-  - m_sDialogue: 'You can now use Jump Kick to destroy the dark clouds that are under
-      the floor. (On air -> Press "Down" then "Attack") '
+  - m_sDialogue: 'You can now use Jump Kick to destroy the dark clouds <br>that are
+      under the floor. <br>(On air -> Press "Down" then "Attack") '
     m_sTalker: 
     m_arrEvent: []

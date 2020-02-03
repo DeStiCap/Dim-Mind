@@ -27,6 +27,8 @@ namespace GGJ2020
 
                 hActorData.m_eStateFlag &= ~ActorStateFlag.Walking;
             }
+            else if (FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag, ActorStateFlag.IsWalling))
+                return;
             else if (!FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag, ActorStateFlag.Walking))
                 hActorData.m_eStateFlag |= ActorStateFlag.Walking;
 

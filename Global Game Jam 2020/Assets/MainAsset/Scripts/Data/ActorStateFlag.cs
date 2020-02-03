@@ -9,6 +9,7 @@
         GroundPounding      = 1 << 4,
         WallJumping         = 1 << 5,
         GroundPoundCasting  = 1 << 6,
+        Jumping             = 1 << 7,
 
         Freezing            = 1 << 26,
         Attacking           = 1 << 27,

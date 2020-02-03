@@ -75,7 +75,11 @@ namespace GGJ2020
 
             if (hTarget.CompareTag(TagUtility.Name.rock)|| hTarget.CompareTag(TagUtility.Name.destroyableGround))
             {
-                Destroy(hTarget);
+                var hDestroyable = hTarget.GetComponent<IDestroyable>();
+                if(hDestroyable != null)
+                {
+                    hDestroyable.Destroy();
+                }
                 return;
             }
 

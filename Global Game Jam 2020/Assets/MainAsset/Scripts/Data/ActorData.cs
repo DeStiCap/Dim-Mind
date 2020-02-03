@@ -14,6 +14,7 @@ namespace GGJ2020
         Idle,
         Running,
         Airing,
+        Hurting,
     }
 
     #endregion
@@ -38,6 +39,7 @@ namespace GGJ2020
 
         public AiData m_hAiData;
 
+        public float m_fJumpStartTime;
         public float m_fLastAttackTime;
 
         public EventCallback<PhysicEventType, ActorData, List<IActorBehaviourData>, Collider2D> m_hTriggerEventCallback;

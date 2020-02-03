@@ -879,7 +879,7 @@ PrefabInstance:
     - target: {fileID: 2100566872039806107, guid: 23c5c1bed7350a842a8742a4558ac13f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4
+      value: -0.338
       objectReference: {fileID: 0}
     - target: {fileID: 3332086503409224577, guid: 23c5c1bed7350a842a8742a4558ac13f,
         type: 3}
@@ -1028,7 +1028,7 @@ PrefabInstance:
     - target: {fileID: 4666486825528091128, guid: 23c5c1bed7350a842a8742a4558ac13f,
         type: 3}
       propertyPath: m_fRadius
-      value: 0.3
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 4666486825528091128, guid: 23c5c1bed7350a842a8742a4558ac13f,
         type: 3}
@@ -1185,6 +1185,11 @@ PrefabInstance:
       propertyPath: m_hDeadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 2247161973531745347}
+    - target: {fileID: 7082135009401792560, guid: 23c5c1bed7350a842a8742a4558ac13f,
+        type: 3}
+      propertyPath: m_hTakeDamageSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a63f801f830fad6439ff10ac7b088ed8, type: 3}
     - target: {fileID: 7506856851982193843, guid: 23c5c1bed7350a842a8742a4558ac13f,
         type: 3}
       propertyPath: m_SortingOrder
