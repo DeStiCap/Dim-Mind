@@ -12,7 +12,7 @@ namespace GGJ2020
     {
         #region Data
 
-        public struct AttackCacheData : IActorBehaviourData
+        public class AttackCacheData : IActorBehaviourData
         {
             public UnityAction<ActorData, List<IActorBehaviourData>> m_actAttack;
             public float m_fAttackLastTime;
@@ -54,7 +54,7 @@ namespace GGJ2020
         {
             base.OnStartBehaviour(hActorData, lstBehaviourData);
 
-            if (lstBehaviourData.TryGetData(out AttackCacheData hOutData))
+            if (lstBehaviourData.TryGetDataRW(out AttackCacheData hOutData))
             {
                 hActorData.m_hInputData.m_hInputCallback.Add((InputEventType.Attack, GetInputType.Down), hOutData.m_actAttack);
             }
@@ -62,7 +62,7 @@ namespace GGJ2020
 
         public override void OnStopBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            if (lstBehaviourData.TryGetData(out AttackCacheData hOutData))
+            if (lstBehaviourData.TryGetDataRW(out AttackCacheData hOutData))
             {
                 hActorData.m_hInputData.m_hInputCallback.Remove((InputEventType.Attack, GetInputType.Down), hOutData.m_actAttack);
             }
@@ -72,10 +72,7 @@ namespace GGJ2020
 
         public override void OnDestroyBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            if (lstBehaviourData.TryGetData<AttackCacheData>(out int nOutIndex))
-            {
-                lstBehaviourData.RemoveAt(nOutIndex);
-            }
+            lstBehaviourData.RemoveRW<AttackCacheData>();
 
             base.OnDestroyBehaviour(hActorData, lstBehaviourData);
         }
@@ -89,7 +86,7 @@ namespace GGJ2020
             if (hActorData.m_hRigid == null || hActorData.m_hStatus == null || (hActorData.m_hInputData.m_fVertical < 0 && FlagUtility.HasFlagUnsafe(hActorData.m_eSkill,Skill.GroundPound)))
                 return;
 
-            if (!lstBehaviourData.TryGetData(out AttackCacheData hData, out var nIndex))
+            if (!lstBehaviourData.TryGetDataRW(out AttackCacheData hData))
                 return;
 
             if (!lstBehaviourData.TryGetData(out ActorMonoData<Actor_AmmoController> hAmmoController))
@@ -151,7 +148,6 @@ namespace GGJ2020
                 m_hKnifeFlying.gameObject.SetActive(true);
 
                 hData.m_fAttackLastTime = Time.time;
-                lstBehaviourData[nIndex] = hData;
 
                 if (hActorData.m_hAnimation)
                 {

@@ -64,8 +64,11 @@ namespace GGJ2020
                 || hHitTarget.gameObject.CompareTag(TagUtility.Name.rock)
                 || hHitTarget.gameObject.CompareTag(TagUtility.Name.enemy))
                 GroundPoundBound();
-            else if(m_hUser)
+            else if (m_hUser)
+            {
+                m_hUser.actorData.m_eStateFlag &= ~ActorStateFlag.GroundPoundCasting;
                 m_hUser.actorData.m_eStateFlag &= ~ActorStateFlag.GroundPounding;
+            }
         }
 
         public void GroundPoundDamage(GameObject hTarget)

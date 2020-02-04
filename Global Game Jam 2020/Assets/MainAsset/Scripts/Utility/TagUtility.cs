@@ -9,6 +9,7 @@ namespace GGJ2020
             public const string rock = "Rock";
             public const string destroyableGround = "DestroyableGround";
             public const string enemy = "Enemy";
+            public const string boss = "Boss";
         }
     }
 }

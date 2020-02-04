@@ -12,7 +12,7 @@ namespace GGJ2020
     {
         #region Data
 
-        public struct WallJumpCacheData : IActorBehaviourData
+        public class WallJumpCacheData : IActorBehaviourData
         {
             public UnityAction<ActorData, List<IActorBehaviourData>> m_actJump;
             public float m_fWallJumpLastTime;
@@ -47,7 +47,7 @@ namespace GGJ2020
         {
             base.OnStartBehaviour(hActorData, lstBehaviourData);
 
-            if (lstBehaviourData.TryGetData(out WallJumpCacheData hOutData))
+            if (lstBehaviourData.TryGetDataRW(out WallJumpCacheData hOutData))
             {
                 hActorData.m_hInputData.m_hInputCallback.Add((InputEventType.Jump, GetInputType.Down), hOutData.m_actJump);
             }
@@ -55,7 +55,7 @@ namespace GGJ2020
 
         public override void OnStopBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            if (lstBehaviourData.TryGetData(out WallJumpCacheData hOutData))
+            if (lstBehaviourData.TryGetDataRW(out WallJumpCacheData hOutData))
             {
                 hActorData.m_hInputData.m_hInputCallback.Remove((InputEventType.Jump, GetInputType.Down), hOutData.m_actJump);
             }
@@ -65,10 +65,7 @@ namespace GGJ2020
 
         public override void OnDestroyBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            if (lstBehaviourData.TryGetData<WallJumpCacheData>(out int nOutIndex))
-            {
-                lstBehaviourData.RemoveAt(nOutIndex);
-            }
+            lstBehaviourData.RemoveRW<WallJumpCacheData>();
 
             base.OnDestroyBehaviour(hActorData, lstBehaviourData);
         }
@@ -80,7 +77,7 @@ namespace GGJ2020
             if (!FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag, ActorStateFlag.WallJumping))
                 return;
 
-            if (!lstBehaviourData.TryGetData(out WallJumpCacheData hData))
+            if (!lstBehaviourData.TryGetDataRW(out WallJumpCacheData hData))
                 return;
 
             if(Time.time >= hData.m_fWallJumpLastTime + m_fWallJumpDuration)
@@ -97,7 +94,8 @@ namespace GGJ2020
         {
             if (hActorData.m_hRigid == null || hActorData.m_hStatus == null 
                 || hActorData.m_hInputData.m_fHorizontal == 0 || !FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag,ActorStateFlag.IsWalling)
-                || FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag,ActorStateFlag.WallJumping) || !lstBehaviourData.TryGetData(out WallJumpCacheData hData,out var nIndex))
+                || FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag,ActorStateFlag.WallJumping) 
+                || !lstBehaviourData.TryGetDataRW(out WallJumpCacheData hData))
                 return;
 
 
@@ -114,8 +112,6 @@ namespace GGJ2020
             hActorData.m_eStateFlag |= ActorStateFlag.HoldingJump;
             hActorData.m_eStateFlag |= ActorStateFlag.WallJumping;
             hData.m_fWallJumpLastTime = Time.time;
-
-            lstBehaviourData[nIndex] = hData;
 
             if (hActorData.m_hAnimation)
             {

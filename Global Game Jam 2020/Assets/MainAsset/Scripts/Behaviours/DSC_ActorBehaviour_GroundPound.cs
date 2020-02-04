@@ -12,7 +12,7 @@ namespace GGJ2020
     {
         #region Data
 
-        public struct GroundPoundCacheData : IActorBehaviourData
+        public class GroundPoundCacheData : IActorBehaviourData
         {
             public UnityAction<ActorData, List<IActorBehaviourData>> m_actDownAttack;
             public float m_fGroundPoundStartTime;
@@ -48,7 +48,7 @@ namespace GGJ2020
         {
             base.OnStartBehaviour(hActorData, lstBehaviourData);
 
-            if (lstBehaviourData.TryGetData(out GroundPoundCacheData hOutData))
+            if (lstBehaviourData.TryGetDataRW(out GroundPoundCacheData hOutData))
             {
                 hActorData.m_hInputData.m_hInputCallback.Add((InputEventType.Attack, GetInputType.Down), hOutData.m_actDownAttack);
             }
@@ -56,7 +56,7 @@ namespace GGJ2020
 
         public override void OnStopBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            if (lstBehaviourData.TryGetData(out GroundPoundCacheData hOutData))
+            if (lstBehaviourData.TryGetDataRW(out GroundPoundCacheData hOutData))
             {
                 hActorData.m_hInputData.m_hInputCallback.Remove((InputEventType.Attack, GetInputType.Down), hOutData.m_actDownAttack);
             }
@@ -66,10 +66,7 @@ namespace GGJ2020
 
         public override void OnDestroyBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            if (lstBehaviourData.TryGetData<GroundPoundCacheData>(out int nOutIndex))
-            {
-                lstBehaviourData.RemoveAt(nOutIndex);
-            }
+            lstBehaviourData.RemoveRW<GroundPoundCacheData>();
 
             base.OnDestroyBehaviour(hActorData, lstBehaviourData);
         }
@@ -78,7 +75,7 @@ namespace GGJ2020
         {
             base.OnUpdateBehaviour(hActorData, lstBehaviourData);
 
-            if (!lstBehaviourData.TryGetData(out GroundPoundCacheData hData))
+            if (!lstBehaviourData.TryGetDataRW(out GroundPoundCacheData hData))
                 return;
 
             if (hActorData.m_hRigid)
@@ -116,14 +113,13 @@ namespace GGJ2020
             if (hActorData.m_hInputData.m_fVertical >= 0 || hActorData.m_hRigid == null || hActorData.m_hStatus == null 
                 || FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag,ActorStateFlag.GroundPoundCasting)
                 || FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag,ActorStateFlag.GroundPounding)
-                || !lstBehaviourData.TryGetData(out GroundPoundCacheData hData,out var nIndex))
+                || !lstBehaviourData.TryGetDataRW(out GroundPoundCacheData hData))
                 return;
 
 
             hActorData.m_eStateFlag |= ActorStateFlag.GroundPoundCasting;
             hActorData.m_hRigid.velocity = Vector2.zero;
             hData.m_fGroundPoundStartTime = Time.time;
-            lstBehaviourData[nIndex] = hData;
 
             if (hActorData.m_hAnimation)
             {

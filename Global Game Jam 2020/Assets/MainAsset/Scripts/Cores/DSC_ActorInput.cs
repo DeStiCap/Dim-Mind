@@ -85,13 +85,13 @@ namespace GGJ2020
 
         protected virtual void Update()
         {
-            if (m_hMove != null)
+            if (m_hMove != null && m_hMove.enabled)
             {
                 Vector2 vMove = m_hMove.ReadValue<Vector2>();
                 UpdateInputMoveAxis(vMove.x, vMove.y);
             }
 
-            if(m_hJump != null)
+            if(m_hJump != null && m_hJump.enabled)
             {
                 float fJumpNumber = m_hJump.ReadValue<float>();
                 if(fJumpNumber != m_fLastJumpInputNumber)
@@ -106,14 +106,14 @@ namespace GGJ2020
                 m_fLastJumpInputNumber = fJumpNumber;
             }
 
-            if (m_hAttack != null)
+            if (m_hAttack != null && m_hAttack.enabled)
             {
                 float fAttackNumber = m_hAttack.ReadValue<float>();
                 if (fAttackNumber != m_fLastAttackInputNumber)
                 {
                     m_fAttackInputChangeLastTime = Time.time;
 
-                    if(m_fAttackInputChangeLastTime - m_fAttackInputLastTime > 0.1f)
+                    if(m_fAttackInputChangeLastTime - m_fAttackInputLastTime > 0.2f)
                     {
                         FixInput();
                     }
@@ -236,6 +236,8 @@ namespace GGJ2020
 
         void FixInput()
         {
+            m_hMove.Disable();
+            m_hMove.Enable();
             m_hJump.Disable();
             m_hJump.Enable();
             m_hAttack.Disable();

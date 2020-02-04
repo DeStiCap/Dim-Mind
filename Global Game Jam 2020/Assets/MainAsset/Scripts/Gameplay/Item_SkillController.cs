@@ -23,6 +23,8 @@ namespace GGJ2020
 
         #endregion
 
+        bool m_bAlreadyGet;
+
         #endregion
 
         #region Base - Mono
@@ -37,6 +39,9 @@ namespace GGJ2020
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (m_bAlreadyGet)
+                return;
+
             if (collision.CompareTag(TagUtility.Name.player))
             {
                 var hPlayerController = Global_GameplayManager.playerController;
@@ -45,7 +50,6 @@ namespace GGJ2020
 
                 Global_GameplayManager.playerSkill |= m_eSkill;
                 Global_GameplayManager.getItemEvent?.Invoke(m_eSkill);
-
                 GetSkill();
             }
         }
@@ -56,8 +60,7 @@ namespace GGJ2020
 
         void GetSkill()
         {
-            
-
+            m_bAlreadyGet = true;
             m_hGetEvent?.Invoke();
             Destroy(gameObject);
         }

@@ -53,10 +53,7 @@ namespace GGJ2020
 
         public override void OnDestroyBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            if (lstBehaviourData.TryGetData<DoubleJumpCacheData>(out int nOutIndex))
-            {
-                lstBehaviourData.RemoveAt(nOutIndex);
-            }
+            lstBehaviourData.Remove<DoubleJumpCacheData>();
 
             base.OnDestroyBehaviour(hActorData, lstBehaviourData);
         }

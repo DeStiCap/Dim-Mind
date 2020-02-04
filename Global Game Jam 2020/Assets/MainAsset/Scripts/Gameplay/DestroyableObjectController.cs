@@ -14,6 +14,7 @@ namespace GGJ2020
 #pragma warning disable 0649
 
         [SerializeField] protected UnityEvent m_hDestroyEvent;
+        [SerializeField] protected AudioClip m_hDestroySound;
 
 #pragma warning restore 0649
         #endregion
@@ -33,6 +34,9 @@ namespace GGJ2020
         public void Destroy()
         {
             m_hDestroyEvent?.Invoke();
+
+            Global_SoundManager.PlayOneShot(m_hDestroySound);
+
             Destroy(gameObject);
         }
 

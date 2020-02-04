@@ -14,7 +14,7 @@ namespace GGJ2020
 #pragma warning disable 0649
 
         [SerializeField] protected bool m_bCanBreakRock;
-        [SerializeField] protected Transform m_hHitParticalPrefab;
+        [SerializeField] protected Transform m_hHitPartical;
 
         [Header("Events")]
         [SerializeField] protected UnityEvent m_hHitEvent;
@@ -59,10 +59,11 @@ namespace GGJ2020
                     }
                 }
 
-                if (m_hHitParticalPrefab)
+                if (m_hHitPartical)
                 {
-                    var hPartical = Instantiate(m_hHitParticalPrefab, transform.position, Quaternion.identity);
-                    
+                    m_hHitPartical.position = transform.position;
+                    m_hHitPartical.SetParent(null);
+                    m_hHitPartical.gameObject.SetActive(true);
                 }
 
                 m_hHitEvent?.Invoke();

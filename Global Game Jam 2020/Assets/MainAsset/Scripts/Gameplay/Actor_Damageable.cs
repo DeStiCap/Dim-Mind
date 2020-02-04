@@ -71,7 +71,7 @@ namespace GGJ2020
 
         public void DoDamage(int nDamage)
         {
-
+            var hActor = m_hActorController.actorData.m_hActor;
             var hStat = m_hActorController.actorData.m_hStatus.status;
             hStat.m_nHP -= nDamage;
             m_hActorController.actorData.m_hStatus.status = hStat;
@@ -86,9 +86,13 @@ namespace GGJ2020
 
                 m_hActorController.deadEvent?.Invoke();
 
-                if (m_hActorController.actorData.m_hActor.CompareTag(TagUtility.Name.player) && !Global_GameplayManager.winGame)
+                if (hActor.CompareTag(TagUtility.Name.player) && !Global_GameplayManager.winGame)
                 {
                     Global_GameplayManager.PlayerDead();
+                }
+                else if (hActor.CompareTag(TagUtility.Name.boss) && !Global_GameplayManager.bossDead)
+                {
+                    Global_GameplayManager.bossDead = true;
                 }
 
                 return;

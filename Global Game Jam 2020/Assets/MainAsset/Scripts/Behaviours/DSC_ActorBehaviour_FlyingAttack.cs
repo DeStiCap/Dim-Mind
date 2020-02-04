@@ -11,7 +11,7 @@ namespace GGJ2020
     {
         #region Data
 
-        public struct AttackCacheData : IActorBehaviourData
+        public class AttackCacheData : IActorBehaviourData
         {
             public bool m_bAttacking;
             public Vector2 m_vAttackStartPos;
@@ -56,7 +56,7 @@ namespace GGJ2020
 
         public override void OnDestroyBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            lstBehaviourData.Remove<AttackCacheData>();
+            lstBehaviourData.RemoveRW<AttackCacheData>();
 
             base.OnDestroyBehaviour(hActorData, lstBehaviourData);
         }
@@ -68,20 +68,20 @@ namespace GGJ2020
             if (!FlagUtility.HasFlagUnsafe(hActorData.m_eStateFlag, ActorStateFlag.Fighting))
                 return;
 
-            if (!lstBehaviourData.TryGetData(out AttackCacheData hData,out int nIndex))
+            if (!lstBehaviourData.TryGetDataRW(out AttackCacheData hData))
                 return;
 
             if (!hData.m_bAttacking)
-                StartAttack(hActorData, lstBehaviourData, hData, nIndex);
+                StartAttack(hActorData, lstBehaviourData, hData);
             else
-                ProcessAttack(hActorData, lstBehaviourData, hData, nIndex);
+                ProcessAttack(hActorData, lstBehaviourData, hData);
         }
 
         #endregion
 
         #region Main
 
-        protected virtual void StartAttack(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData,AttackCacheData hData,int nIndex)
+        protected virtual void StartAttack(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData,AttackCacheData hData)
         {
             var hPlayer = Global_GameplayManager.playerController;
             if (hPlayer == null)
@@ -95,10 +95,9 @@ namespace GGJ2020
             hData.m_fAttackDuration = (Vector2.Distance(hData.m_vAttackStartPos, hData.m_vAttackDestination) / (hActorData.m_hStatus.status.m_fMoveSpeed * 2));
 
             hData.m_bAttacking = true;
-            lstBehaviourData[nIndex] = hData;
         }
 
-        protected virtual void ProcessAttack(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData,AttackCacheData hData,int nIndex)
+        protected virtual void ProcessAttack(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData,AttackCacheData hData)
         {
             float fTime = (Time.time - hData.m_fAttackStartTime) / hData.m_fAttackDuration;
             Vector2 vPos1 = Vector2.Lerp(hData.m_vAttackStartPos, hData.m_vControlPoint, fTime);
@@ -123,8 +122,6 @@ namespace GGJ2020
                     hData.m_bFlyAgain = true;
                 }
             }
-
-            lstBehaviourData[nIndex] = hData;
         }
 
         

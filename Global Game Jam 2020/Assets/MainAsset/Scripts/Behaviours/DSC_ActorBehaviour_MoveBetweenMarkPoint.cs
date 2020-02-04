@@ -21,7 +21,7 @@ namespace GGJ2020
 
         #region Data
 
-        public struct MoveCacheData : IActorBehaviourData
+        public class MoveCacheData : IActorBehaviourData
         {
             public MoveWayType m_eMoveWay;
             public int m_nNextPointIndex;
@@ -63,7 +63,7 @@ namespace GGJ2020
 
         public override void OnDestroyBehaviour(ActorData hActorData, List<IActorBehaviourData> lstBehaviourData)
         {
-            lstBehaviourData.Remove<MoveCacheData>();
+            lstBehaviourData.RemoveRW<MoveCacheData>();
 
             base.OnDestroyBehaviour(hActorData, lstBehaviourData);
         }
@@ -73,7 +73,7 @@ namespace GGJ2020
             base.OnUpdateBehaviour(hActorData, lstBehaviourData);
 
             if (!lstBehaviourData.TryGetData(out ActorMonoData<Actor_MarkPointController> hActorMarkPoint)
-                || !lstBehaviourData.TryGetData(out MoveCacheData hData, out int nIndex))
+                || !lstBehaviourData.TryGetDataRW(out MoveCacheData hData))
                 return;
 
             var hMarkPointController = hActorMarkPoint.m_hMono.markPointController;
@@ -155,7 +155,6 @@ namespace GGJ2020
 
             Vector3 vMove = vDifferent.normalized * hActorData.m_hStatus.status.m_fMoveSpeed * Time.deltaTime;
             hActorData.m_hActor.position += vMove;
-            lstBehaviourData[nIndex] = hData;
 
             if (m_bFlipFacing)
             {
@@ -167,11 +166,6 @@ namespace GGJ2020
                 }
             }
         }
-
-        #endregion
-
-        #region Main
-
 
         #endregion
 

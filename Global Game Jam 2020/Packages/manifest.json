@@ -53,7 +53,7 @@
   "lock": {
     "com.dsc.actor": {
       "revision": "HEAD",
-      "hash": "900269120db5276794759bcad0dec52537e6f458"
+      "hash": "bf844392a119772b6700076847a42960f0c331a2"
     },
     "com.dsc.core": {
       "revision": "HEAD",
@@ -61,7 +61,7 @@
     },
     "com.dsc.dialogue": {
       "revision": "HEAD",
-      "hash": "c921575edf720cbc4e7903889327a95f09ce8447"
+      "hash": "9b1c2c070a37417e130e4c71fecd25b62e9a8edf"
     },
     "com.dsc.event": {
       "revision": "HEAD",

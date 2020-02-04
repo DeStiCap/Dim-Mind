@@ -173,6 +173,25 @@ namespace GGJ2020
             }
         }
 
+        public static bool bossDead
+        {
+            get
+            {
+                if (instance == null)
+                    return false;
+
+                return m_hInstance.m_bBossDead;
+            }
+
+            set
+            {
+                if (instance == null)
+                    return;
+
+                m_hInstance.m_bBossDead = value;
+            }
+        }
+
         #endregion
 
         static Global_GameplayManager m_hInstance;
@@ -192,6 +211,8 @@ namespace GGJ2020
         bool m_bWinGame;
 
         float m_fMyTimeScale = 1;
+
+        bool m_bBossDead;
 
         #endregion
 
